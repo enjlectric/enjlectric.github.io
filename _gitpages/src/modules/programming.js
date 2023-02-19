@@ -1,7 +1,5 @@
 import React from 'react';
 import LaserCatShowcase from '../images/laserCatShowcase.gif'
-import worldMapShowcase from '../images/worldMapShowcase.gif'
-import FinalBossShowcase from '../images/finalBossShowcase.gif'
 import classNames from 'classnames';
 
 class Programming extends React.Component {
