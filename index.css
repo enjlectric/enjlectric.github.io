@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(cubes.png);
+	background-color: #000838;
+}
+
+#wrapper {
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	min-width: 640px;
+	max-width:1280px;
+	margin: 0 auto;
+}
+
+html{
+	overflow-y: scroll;
+}
+
+.title{
+	width:400px;
+	padding:auto;
+	margin:auto;
+}
+
+.htable {
+	align-content: center;
+	align-items: center;
+	align-self:center;
+	width:100%;
+}
+
+.bannerButton {
+	width: 100%;
+	min-width: 250px;
+	max-width:100%;
+	height: 100px;
+	border: 0,0,0,10%;
+	border-style: hidden;
+	background-image:url(bg_stripes.png), url(btn_arrow.png);
+	background-repeat: repeat, no-repeat;
+	background-origin:content-box, border-box;
+	background-size: auto, contain;
+	background-position: left, center -100px;
+	background-color:#ECE89A;
+	text-align: center;
+	color:darkolivegreen;
+	font-variant: small-caps;
+	font-size: 300%;
+	overflow:hidden;
+	font-family: 'Sarala', sans-serif;
+	transition: background-color 0.5s, background-position 1s, text-indent 1s, color 1s;
+}
+.btnHlit{
+	width: 100%;
+	min-width: 250px;
+	max-width:100%;
+	height: 100px;
+	border: 0,0,0,10%;
+	border-style: hidden;
+	background-image:url(bg_stripes.png), url(btn_arrow.png);
+	background-repeat: repeat, no-repeat;
+	background-origin:content-box, border-box;
+	background-size: auto, contain;
+	background-color: #AD9050;
+	background-position: 0px 100px, center 250px;
+	text-align: center;
+	color:white;
+	font-variant: small-caps;
+	font-size: 300%;
+	font-family: 'Sarala', sans-serif;
+	overflow:hidden;
+}
+
+.flowImg{
+	width:94%;
+	margin: 30px 20px 20px 20px;
+	align-self: center;
+	box-shadow: 0px 10px 0px 0px #00002233;
+}
+
+.centerContent{
+	width:100%;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	
+}
+
+a {
+	color: orange;
+}
+
+.rightImg{
+	width:15%;
+	margin: 30px 20px 20px 20px;
+	float:right;
+	box-shadow: 0px 10px 0px 0px #00002233;
+}
+
+.bannerButton:hover {
+	background-color:#E9904C;
+	background-position: 0% 0px, center -50px;
+	text-decoration: underline;
+}
+.bannerButton:focus {
+	background-color: grey;
+	background-position: 0px 100px, center 250px;
+	color:white;
+}
+
+.fieldBorder {
+	background-image: url(bg_stripes.png);
+	background-color:#7DAFC4;
+	box-shadow: 0px 10px 0px 0px #00002233;
+	margin: 30px 20px 20px 20px;
+}
+
+.textField {
+	padding: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color:white;
+	font-family: 'Sarala', sans-serif;
+	font-size: 125%;
+	font-display: block;
+}
+
+.titleBoundaryV2, .textBoundaryV2, .subTitleBoundaryV2 {
+	border-color: cyan;
+	border-radius: 12px;
+	border-style: inset;
+	border-width: 4px;
+	padding: 2px;
+	margin: 20px auto;
+	color: black;
+	background-color: #36383B99
+}
+
+.textBoundaryV2 {
+	border-color:#0479D9;
+}
+
+.titleBoundaryV2 {
+	background-color: #36383BBB
+}
+
+.subTitleBoundaryV2 {
+	border-color: aquamarine;
+	padding:12px;
+	margin:30px auto;
+	border-width: 3px;
+}
+
+.hoverText {
+  position: relative;
+  width: 100%;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 89%;
+  width: 94%;
+  margin: 30px 20px 20px 20px;
+  opacity: 0;
+  transition: .5s ease;
+  background: #00000077;
+}
+
+.hoverText:hover .textOverlay {
+  opacity: 1;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  	max-width: 1000px;
+ 	position: relative;
+ 	margin: auto;
+	border-width: thick;
+	border-color: #0479D9;
+	border-radius: 12px;
+	border-style: inset;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+    display: none;
+}
+.mySlides2 {
+    display: none;
+}
+.mySlides3 {
+    display: none;
+}
+.mySlides4 {
+    display: none;
+}
+.mySlides5 {
+    display: none;
+}
+.mySlides6 {
+    display: none;
+}
+.mySlides7 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  	cursor: pointer;
+  	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	margin-top: -22px;
+  	padding: 16px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 18px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+	background-color: rgba(56,19,108,0.80);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(56,38,208,0.80);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+	width:100%;
+	background-color: rgba(56,19,108,0.80);
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+	background-color: #000000AA;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

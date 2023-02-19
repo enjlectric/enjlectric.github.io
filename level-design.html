@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Henri Beeres creates videogames.">
+<meta name="keywords" content="game designer, video game, designer, henri, beeres, portfolio, programmer, artist, pixel art, music, level design, levels, system sync, a christmas thing, h2ohm, ohms lab, lights out, little monster in your closet">
+<title>Henri Beeres</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Kanit|Sarala" rel="stylesheet">
+<link rel="icon"
+      type="image/png"
+      href="lgo.png">
+<link rel="shortcut icon" href="lgo.png" type="image/png">
+
+<script language="javascript">
+	var slideIndex = [1,1, 1, 1, 1, 1, 1];
+	/* Class the members of each slideshow group with different CSS classes */
+	var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7"];
+	function plusSlides(n, no) {
+	  showSlides(slideIndex[no] += n, no);
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (x.length > 0) {
+
+        if (n > x.length) {slideIndex[no] = 1}
+        if (n < 1) {slideIndex[no] = x.length}
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex[no]-1].style.display = "block";
+  //setTimeout(plusSlides(n+1, no, 2000));
+
+	  } 
+	}
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+	showSlides(1, 3);
+	showSlides(1, 4);
+	showSlides(1, 5);
+	showSlides(1, 6);
+
+</script>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<header>
+			<div class = "title">
+				<img alt src="lgoo.png" style="width:100%">
+			</div>
+		</header>
+		<div class = "centerContent">
+			<div class = "titleBoundaryV2" style="width:50%">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					About me
+				</h2>
+			</div>
+		</div>
+		<div id="bio">
+			<div class="textBoundaryV2">
+				<article class="textField">
+					I'm a <font color="aqua">German Game Designer</font> born in '98 who has been working on game projects since 2011. I studied at the Mediadesign Hochschule Düsseldorf from 2016 to 2019. Since then I have been working full-time as a Software Developer at Petricore Systems.<br>
+					I <font color="aqua">specialise in programming and level design</font>, but am also proficient in <font color="aqua">pixel art, sound design, video editing and music composing</font>.<br>
+					<font color="aqua">Unity</font> is my game engine of choice, with 6 years of experience. Though I'm also no stranger to the inner workings of the Unreal Engine.<br>
+					This site outlines my most recent (fan-)projects where I have played a major role in level design.<br><br>
+					If you are interested in working with me, please use the contact info at the bottom of the page!
+				</article>
+			</div>
+        </div>
+        
+			<!--<table class = "htable">
+				 <tr>
+					<td colspan="2">
+						<div class="subTitleBoundaryV2" width="50%" style="text-align: center">
+							<article class="textField" style="font-size: 225%">
+								2k1x Subzero Heroes (2017-2020)
+							</article>
+							<article class="textField">
+								Assumed Roles: Basically everything
+							</article>
+							<article class="textField">
+								Engine: Super Mario Bros X (Lua)
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides1" style="display:block;">
+							<div class="numbertext">1 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_16_42_26.gif" style="width:100%;">
+							<div class="text">The first levels serve as an <font color="aqua">introduction to all basic ideas</font> commonly used throughout the game, such as the cape swipe mechanic.</div>
+						  </div>
+
+						  <div class="mySlides1">
+							<div class="numbertext">2 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_16_43_09.gif" style="width:100%;" loading="lazy">
+							<div class="text">High jumps are another common mechanic introduced right at the start! They are charged up by ducking, so the player must crawl through a narrow gap and will notice the visual and audio cues.</div>
+						  </div>
+
+						  <div class="mySlides1">
+							<div class="numbertext">3 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_17_12_10.gif" style="width:100%;" loading="lazy">
+							<div class="text">The level "Corridors of Nature" deals with vines and pendulum platforms. It begins with a playground introducing the ideas.</div>
+						  </div>
+
+						  <div class="mySlides1">
+							<div class="numbertext">4 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_17_14_10.gif" style="width:100%;" loading="lazy">
+							<div class="text">The level finishes in a scrolling section in which the player must maneuver around vegetation growing all around them.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">
+                                Every level in Subzero Heroes is built around a <font color="aqua">specific concept</font>, playing with different player abilities and obstacles. Extra attention is paid to making each area within a level distinct as well.
+                            </article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">
+                                While many ideas shine within specific stages, some elements go through their progression from introduction to climax <font color="aqua">over the course of several levels</font>.
+                                The result is a complex web of ideas in various stages of development that keep the game engaging and surprising.
+                            </article>
+						</div>
+					</td>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides2" style="display:block;">
+							<div class="numbertext">1 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_16_50_57.gif" style="width:100%;">
+							<div class="text">Levels like "An Inconvenient Descent" may toy with the player's innate abilities. Here, an updraft mechanic allows for flight.</div>
+						  </div>
+
+						  <div class="mySlides2">
+							<div class="numbertext">2 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_16_57_20.gif" style="width:100%;" loading="lazy">
+							<div class="text">The updraft later returns in one of the boss battles, creating an intense setpiece and unique situation.</div>
+						  </div>
+
+						  <div class="mySlides2">
+							<div class="numbertext">3 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_17_00_03.gif" style="width:100%;" loading="lazy">
+							<div class="text">At one point, the player encounters a set of minibosses. Artemis and her cohorts serve as a tutorial for the swipable star mechanic.</div>
+						  </div>
+
+						  <div class="mySlides2">
+							<div class="numbertext">4 / 4</div>
+							<img alt src="images/shgifs/2021-05-27_17_03_13.gif" style="width:100%;" loading="lazy">
+							<div class="text">In a later, more intense boss fight, the swipable stars are re-used as the primary form of damaging the boss during a powerful array of attacks, in order to ensure the player rarely has to wait for an attack opportunity.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides3" style="display:block;">
+							<div class="numbertext">1 / 3</div>
+							<img alt src="images/shgifs/2021-05-27_16_50_22.gif" style="width:100%;">
+							<div class="text">"Apollo" is a twist on the "head-and-hands" boss trope, made up of four hands that combine to form a face. After two hands are destroyed, the boss changes its attack pattern.</div>
+						  </div>
+
+						  <div class="mySlides3">
+							<div class="numbertext">2 / 3</div>
+							<img alt src="images/shgifs/2021-05-27_16_52_31.gif" style="width:100%;" loading="lazy">
+							<div class="text">Bosses like "Neko-san" don't adhere to a strict pattern, but instead watch the player's movements and counterattack when given the chance. The player must be cunning to breach the boss's defenses!</div>
+						  </div>
+
+						  <div class="mySlides3">
+							<div class="numbertext">3 / 3</div>
+							<img alt src="images/shgifs/2021-05-27_17_57_16.gif" style="width:100%;" loading="lazy">
+							<div class="text">Every boss has a remixed fight in which their properties are adjusted to accentuate their strengths. Neko-san's reaction speed greatly improves, strengthening the emphasis on paying attention to your opponent's movements.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">
+                                In some ways, the bosses are levels in themselves. While working on depleting the boss's health bar, the player encounters <font color="aqua">pattern changes and new phases</font> upon reaching certain theresholds, creating a dynamic fight environment that's easy to learn while leaving room for hardcore players to optimize their skill.
+                            </article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">
+                                Players struggling with the game can seek help in one of the many items that can be purchased for cheap from the always available travelling merchant.
+                                From extra jumps to a multiplier on boss damage dealt, these items <font color="aqua">aid newcomers and speedrunners</font> looking for a fast route alike.
+                            </article>
+						</div>
+					</td>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides4" style="display:block;">
+							<div class="numbertext">1 / 1</div>
+							<img alt src="images/shgifs/2021-05-27_17_05_59.gif" style="width:100%;">
+							<div class="text">The vast array of helpful items, courtesy of Mr. Sir.</div>
+						  </div>
+
+						  <div class="mySlides4">
+							<div class="numbertext">2 / 2</div>
+							<img alt src="images/shgifs/2021-05-27_17_08_49.gif" style="width:100%;" loading="lazy">
+							<div class="text">Levels frequently feature sequence break-able areas to be discovered and exploited by cunning players. The Bubble Bottle is particularly effective in the level EZ Train.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides5" style="display:block;">
+							<div class="numbertext">1 / 6</div>
+							<img alt src="images/shgifs/2021-05-27_16_48_15.gif" style="width:100%;">
+							<div class="text">"The Oasis" serves as the central town area. By using excess coins, you are able to upgrade it, adding new services such as a vending machine and accessory shop.</div>
+						  </div>
+
+						  <div class="mySlides5">
+							<div class="numbertext">2 / 6</div>
+							<img alt src="images/shgifs/2021-05-27_16_54_21.gif" style="width:100%;" loading="lazy">
+							<div class="text">These bonus sections add an extra challenge for players wanting more.</div>
+						  </div>
+
+						  <div class="mySlides5">
+							<div class="numbertext">3 / 6</div>
+							<img alt src="images/shgifs/2021-05-27_16_49_11.gif" style="width:100%;" loading="lazy">
+							<div class="text">Heart-shaped collectibles can be traded for various goodies, among which there are "treasure maps" that point to optional levels.</div>
+						  </div>
+
+						  <div class="mySlides5">
+							<div class="numbertext">4 / 6</div>
+							<img alt src="images/shgifs/2021-05-27_17_22_38.gif" style="width:100%;" loading="lazy">
+							<div class="text">One of these bonus areas is "Dryland Base", an uncharacteristically barren wasteland that feels like there should be more to it... and indeed there is!</div>
+						  </div>
+
+						  <div class="mySlides5">
+							<div class="numbertext">5 / 6</div>
+							<img alt src="images/shgifs/2021-05-27_17_23_59.gif" style="width:100%;" loading="lazy">
+							<div class="text">By solving a series of tutorial puzzles in a hidden cave area, players unearth a mysterious structure.</div>
+						  </div>
+
+						  <div class="mySlides5">
+							<div class="numbertext">6 / 6</div>
+							<img alt src="images/shgifs/2021-05-27_17_24_48.gif" style="width:100%;" loading="lazy">
+							<div class="text">This structure is "The Stratospire", a big area packed to the brim with puzzles around the puzzle mechanics introduced in Dryland Base.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">
+                                Bonus stages, hidden areas and the town stage serve to further enrich the world with <font color="aqua">new places to explore</font> and a central place to call 'home'.
+                                Hidden throughout these places, players may find heart-shaped collectibles, which unlock trivia regarding the world and its inhabitants, and can be shown to a collector for various in-game goodies.
+                            </article>
+						</div>
+					</td>
+				</tr>
+            </table> -->
+			<table class = "htable">
+				<tr>
+					<td colspan="2" >
+						<div class="subTitleBoundaryV2" width="50%" style="text-align: center">
+							<article class="textField" style="font-size: 250%">System Sync (2018)</article>
+							<article class="textField">
+								Roles: Project Lead, Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Engine: Unity
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides6" style="display:block;">
+							<div class="numbertext">1 / 3</div>
+							<img alt src="img_sy.png" style="width:100%;">
+							<div class="text">The goal of each level is to activate all modules connected to the central device simultaneously. The title screen teaches this with coloured buttons, which players have to aim at. Players can also use the title screen to experiment with the game's controls.</div>
+						  </div>
+
+						  <div class="mySlides6">
+							<div class="numbertext">2 / 3</div>
+							<img alt src="img_sysy.png" style="width:100%">
+							<div class="text">Teamwork is essential. Here, one player has to help the other cross a large gap. Since both players are positively charged, one can lift the other to prevent them from falling into the yellow death ray.</div>
+						  </div>
+
+						  <div class="mySlides6">
+							<div class="numbertext">3 / 3</div>
+							<img alt src="img_sysysy.png" style="width:100%">
+							<div class="text">We built levels by using a tilemap for the terrain. Once the terrain was mostly final we added and linked objects such as doors and switches to the levels. This allowed us to prototype and adjust levels and individual challenges in a matter of minutes.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">System Sync is a <font color="aqua">2D Co-op Puzzle Platformer</font> in which players have to roll, jump and lift each other in order to overcome magnetism-based puzzles. Players can switch between ball and turret states, depending on which they can either jump or fire a magnetic beam. The game features four levels and was developed over the course of five months.
+
+							<br><br>
+							As the <font color="aqua">project lead and main programmer</font> I had my hands on various parts of this game's development. I <font color="aqua">programmed most of the game, designed nearly every scene, did a lot of sound design and gave creative direction and feedback when necessary</font>.</article>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td colspan="2" >
+						<div class="subTitleBoundaryV2" width="50%" style="text-align: center">
+							<article class="textField" style="font-size: 250%">A Christmas Thing (2017)</article>
+							<article class="textField">
+								Roles: Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Engine: Unity
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides7" style="display:block;">
+							<div class="numbertext">1 / 3</div>
+							<img alt src="img_a1dt.png" style="width:100%;">
+							<div class="text">Demo in the game's hub, 'Popsicle Garden'. Next to her is a teleporter to one of the stages.</div>
+						  </div>
+
+						  <div class="mySlides7">
+							<div class="numbertext">2 / 3</div>
+							<img alt src="img_a2dt.png" style="width:100%">
+							<div class="text">Showcase of 'Candy Cove', one of the levels I designed. The player start point is on the platform to the right. The level is designed with 4-step level design in mind and is built around the red and white platforms which spin in various ways.</div>
+						  </div>
+
+						  <div class="mySlides7">
+							<div class="numbertext">3 / 3</div>
+							<img alt src="img_a3dt.png" style="width:100%">
+							<div class="text">Showcase of 'Sorbet Sky'. Just like Candy Cove, I designed this level with a focus on 4-step level design. In this level, the player has to jump between platforms and avoid the fireballs generated by the red boxes. When the player steps on a blue platform, it turns green, giving the player an extra challenge of turning all platforms green for a reward.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">A Christmas Thing is a <font color="aqua">3D Platformer</font> conceptualised as a christmas present for the YouTuber "raocow". The player takes control of Demo, a cycloptic girl, on her quest to find Super Leeks. The game spans two stages and a boss fight. It serves as a <font color="aqua">tech demo for a future Unity Engine framework</font> and was developed over the course of three months.
+							<br><br>
+							<font color="aqua">My role</font> in this game was to <font color="aqua">design the hub and two platforming stages</font>. In order to do so, I created a few textures and meshes and helped out with the game's programming by creating a script for moving platforms.</article>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "titleBoundaryV2">
+			<article class="textField">
+				<div style="font-size:150%">
+					Want to get in touch?
+			</div>
+			</article>
+			<article class="textField">
+				<div><p>
+					Discord: #Enjl6208<br>
+					E-Mail: <a href="mailto:enjlectric@gmail.com">enjlectric@gmail.com</a><br>
+					Twitter: <a href="https://twitter.com/enjlectric">Enjlectric</a><br>
+					itch: <a href="https://enjl.itch.io/">Enjl</a><br>
+				</p>
+			</div>
+			</article>
+		</div>
+	</div>
+</body>
+</html>

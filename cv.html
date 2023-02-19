@@ -1,0 +1,571 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Henri Beeres creates videogames.">
+<meta name="keywords" content="game designer, video game, designer, henri, beeres, portfolio, programmer, artist, pixel art, music, level design, levels, system sync, a christmas thing, h2ohm, ohms lab, lights out, little monster in your closet">
+<title>Henri Beeres</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Kanit|Sarala" rel="stylesheet">
+<link rel="icon"
+      type="image/png"
+      href="lgo.png">
+<link rel="shortcut icon" href="lgo.png" type="image/png">
+
+<script language="javascript">
+	var slideIndex = [1,1, 1, 1];
+	/* Class the members of each slideshow group with different CSS classes */
+	var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"];
+	function plusSlides(n, no) {
+	  showSlides(slideIndex[no] += n, no);
+	}
+
+	function showSlides(n, no) {
+	  var i;
+	  var x = document.getElementsByClassName(slideId[no]);
+	  if (x.length > 0) {
+
+if (n > x.length) {slideIndex[no] = 1}
+if (n < 1) {slideIndex[no] = x.length}
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+console.log(x.length)
+x[slideIndex[no]-1].style.display = "block";
+  //setTimeout(plusSlides(n+1, no, 2000));
+
+	  } 
+	}
+	showSlides(1, 0);
+	showSlides(1, 1);
+	showSlides(1, 2);
+	showSlides(1, 3);
+
+</script>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<header>
+			<div class = "title">
+				<img alt src="lgoo.png" style="width:100%">
+			</div>
+		</header>
+		<div class = "centerContent">
+			<div class = "titleBoundaryV2" style="width:50%">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Welcome
+				</h2>
+			</div>
+		</div>
+		<div id="bio">
+			<div class="textBoundaryV2">
+				<article class="textField">
+					Hello and welcome to my website! I'm a <font color="aqua">German Game Designer</font> born in '98 who has been working on game projects since 2011 and started extensively studying the subject in 2015. I studied at the Mediadesign Hochschule Düsseldorf from 2016 to 2019. Since then I have been working full-time as a Software Developer at Petricore Systems.<br>
+					I <font color="aqua">specialise in programming</font>, but am also proficient in <font color="aqua">level design, pixel art, sound design, video editing and music composing</font>.<br>
+					This site lists my proficiencies, major independent projects and noteworthy fan-projects.<br><br>
+					If you are interested in working with me, use the contact info at the bottom of the page!
+				</article>
+			</div>
+			<div class = "titleBoundaryV2" style="width:50%">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Proficiencies
+				</h2>
+			</div>
+			<table width="100%">
+				<td width="33%" valign="top">
+					<li>
+						<div class="subTitleBoundaryV2">
+							<h3 class="textField" style="font-size: 150%; text-align: center;">
+								Spoken Languages
+							</h3>
+						</div>
+						<div class="textBoundaryV2">
+							<h3 class="textField" style="font-size: 100%; text-align: center;">
+								German (mother tongue)<br>
+								English (In some ways more fluent than German)
+							</h3>
+						</div>
+					</li>
+				</td>
+				<td width="33%" valign="top">
+					<li>
+						<div class="subTitleBoundaryV2">
+							<h3 class="textField" style="font-size: 150%; text-align: center;">
+								Programming Languages
+							</h3>
+						</div>
+						<div class="textBoundaryV2">
+							<h3 class="textField" style="font-size: 100%; text-align: center;">
+								C# (most proficient)<br>
+								C++<br>
+								GLSL<br>
+								Java
+							</h3>
+						</div>
+					</li>
+				</td>
+				<td width="33%" valign="top">
+					<li>
+						<div class="subTitleBoundaryV2">
+							<h3 class="textField" style="font-size: 150%; text-align: center;">
+								Other Languages
+							</h3>
+						</div>
+						<div class="textBoundaryV2">
+							<h3 class="textField" style="font-size: 100%; text-align: center;">
+								Lua<br>
+								Python<br>
+								NSIS<br>
+								GML<br>
+								HTML & CSS<br>
+								XAML & WPF<br>
+								CMD
+							</h3>
+						</div>
+					</li>
+				</td>
+			</table>
+			<table width="100%">
+				<td width="33%" valign="top">
+					<li>
+						<div class="subTitleBoundaryV2">
+							<h3 class="textField" style="font-size: 150%; text-align: center;">
+								Game Engines
+							</h3>
+						</div>
+						<div class="textBoundaryV2">
+							<h3 class="textField" style="font-size: 100%; text-align: center;">
+								Unity (most proficient)<br>
+								Unreal<br>
+								Game Maker
+							</h3>
+						</div>
+					</li>
+				</td>
+				<td width="33%" valign="top">
+					<li>
+						<div class="subTitleBoundaryV2">
+							<h3 class="textField" style="font-size: 150%; text-align: center;">
+								Development Tools
+							</h3>
+						</div>
+						<div class="textBoundaryV2">
+							<h3 class="textField" style="font-size: 100%; text-align: center;">
+								Microsoft Visual Studio (& Code)<br>
+								Adobe Suite (PS, AE, IL, DW)<br>
+								Maya<br>
+								Paint.NET<br>
+								LMMS
+							</h3>
+						</div>
+					</li>
+				</td>
+				<td width="33%" valign="top">
+					<li>
+						<div class="subTitleBoundaryV2">
+							<h3 class="textField" style="font-size: 150%; text-align: center;">
+								Other Software
+							</h3>
+						</div>
+						<div class="textBoundaryV2">
+							<h3 class="textField" style="font-size: 100%; text-align: center;">
+								Office Suite (Excel, Word, PowerPoint)<br>
+								Camtasia Studio<br>
+								Audacity<br>
+								Git & Perforce<br>
+								Sprint & Kanban Sites (Trello, Jira)
+							</h3>
+						</div>
+					</li>
+				</td>
+			</table>
+		</div>
+
+		<div class = "centerContent">
+			<!--<div class = "titleBoundaryV2" style="width:85%">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Subzero Heroes
+				</h2>
+				<h6 class="textField" style="font-size: 125%; text-align: center;">
+					Subzero Heroes was my free-time passion project from February 2017 to September 2020. It's a fan game created in a Super Mario fan engine (SMBX), pushing the engine's capabilities to the limit.
+				</h6>
+				<h6 class="textField" style="font-size: 100%; text-align: center;">
+					Noteworthy systems developed for Subzero Heroes (scripted in lua):
+					<br>- Two fully custom playable characters (five if including secondary gameplay reprieves)
+					<br>- World map system
+					<br>- 18 unique boss battles (<a href=https://youtu.be/haKp5IGqjc0?t=2013>one of which is in 3D</a>)
+					<br>- Character customization framework
+					<br>- Item and inventory frameworks (+75 items)
+					<br>- Pointer-based 'Mario Paint'-style minigame
+				</h6>
+			</div>
+			<div style="text-align-last: center;">
+				<iframe width="800px" height="600px" src="https://www.youtube.com/embed/BfPCodSsWOo"></iframe>
+			</div>
+			<h6 class="textField" style="font-size: 75%; text-align: center;">
+				All third-party assets used are properly credited within the game.
+			</h6>--->
+		</div>
+
+		<div class = "centerContent">
+			<div class = "titleBoundaryV2" style="width:50%">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Uni Projects
+				</h2>
+				<h6 class="textField" style="font-size: 125%; text-align: center;">
+					I have taken part in the development of these projects when I studied Game Design from 2016 to 2019.
+				</h6>
+			</div>
+		</div>
+		<div id="projects" class = "centerContent">
+			<table class = "htable">
+				<tr>
+					<td colspan="2">
+						<div class="subTitleBoundaryV2" width="50%" style="text-align: center">
+							<article class="textField" style="font-size: 225%">
+								The Little Monster in Your Closet (2018)
+							</article>
+							<article class="textField">
+								Roles: Project Lead, Creative Lead, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Team Size: 9 people
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides4" style="display:block;">
+							<div class="numbertext">1 / 3</div>
+							<img alt src="img_monster1.png" style="width:100%;">
+							<div class="text">You play as a monster in a human child's bedroom. Your objective is to make as big of a mess and as much noise as possible before time runs out.</div>
+						  </div>
+
+						  <div class="mySlides4">
+							<div class="numbertext">2 / 3</div>
+							<img alt src="img_monster2.png" style="width:100%">
+							<div class="text">Knocking objects over rewards the player with points and increments their score multiplier. There are objects to be knocked over all over the room!</div>
+						  </div>
+
+						  <div class="mySlides4">
+							<div class="numbertext">3 / 3</div>
+							<img alt src="img_monster3.png" style="width:100%">
+							<div class="text">Balloons let the player keep their combo going and serve as small rewards while going from one point to another. When the time is up, the player's rank is calculated based on the number of star milestones they reached in the score counter.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">The Little Monster in Your Closet is a <font color="aqua">3D Platformer</font> in which players have to spit, bump and pop various objects in order to make a lot of noise and leave levels in a state of chaos. Players can perform double jumps and dashes in order to get around quickly. The game features one level and was developed over the course of five months.
+
+							<br><br>
+							As the <font color="aqua">project lead and main programmer</font> I had my hands on various parts of this game's development. <font color="aqua">I was the team member most closely connected to the game</font> and made a lot of creative decisions with the goal of improving it and meeting the deadline.</article>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" >
+						<div class="subTitleBoundaryV2" width="50%" style="text-align: center">
+							<article class="textField" style="font-size: 250%">System Sync (2018)</article>
+							<article class="textField">
+								Roles: Project Lead, Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Team size: 3 people
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides1" style="display:block;">
+							<div class="numbertext">1 / 3</div>
+							<img alt src="img_sy.png" style="width:100%;">
+							<div class="text">The goal of each level is to activate all modules connected to the central device simultaneously. The title screen teaches this with coloured buttons, which players have to aim at. Players can also use the title screen to experiment with the game's controls.</div>
+						  </div>
+
+						  <div class="mySlides1">
+							<div class="numbertext">2 / 3</div>
+							<img alt src="img_sysy.png" style="width:100%">
+							<div class="text">Teamwork is essential. Here, one player has to help the other cross a large gap. Since both players are positively charged, one can lift the other to prevent them from falling into the yellow death ray.</div>
+						  </div>
+
+						  <div class="mySlides1">
+							<div class="numbertext">3 / 3</div>
+							<img alt src="img_sysysy.png" style="width:100%">
+							<div class="text">We built levels by using a tilemap for the terrain. Once the terrain was mostly final we added and linked objects such as doors and switches to the levels. This allowed us to prototype and adjust levels and individual challenges in a matter of minutes.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">System Sync is a <font color="aqua">2D Co-op Puzzle Platformer</font> in which players have to roll, jump and lift each other in order to overcome magnetism-based puzzles. Players can switch between ball and turret states, depending on which they can either jump or fire a magnetic beam. The game features four levels and was developed over the course of five months.
+
+							<br><br>
+							As the <font color="aqua">project lead and main programmer</font> I had my hands on various parts of this game's development. I <font color="aqua">programmed most of the game, designed nearly every scene, did a lot of sound design and gave creative direction and feedback when necessary</font>.</article>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td colspan="2" >
+						<div class="subTitleBoundaryV2" width="50%" style="text-align: center">
+							<article class="textField" style="font-size: 250%">A Christmas Thing (2017)</article>
+							<article class="textField">
+								Roles: Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Team size: 3 people
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides2" style="display:block;">
+							<div class="numbertext">1 / 3</div>
+							<img alt src="img_a1dt.png" style="width:100%;">
+							<div class="text">Demo in the game's hub, 'Popsicle Garden'. Next to her is a teleporter to one of the stages.</div>
+						  </div>
+
+						  <div class="mySlides2">
+							<div class="numbertext">2 / 3</div>
+							<img alt src="img_a2dt.png" style="width:100%">
+							<div class="text">Showcase of 'Candy Cove', one of the levels I designed. The player start point is on the platform to the right. The level is designed with 4-step level design in mind and is built around the red and white platforms which spin in various ways.</div>
+						  </div>
+
+						  <div class="mySlides2">
+							<div class="numbertext">3 / 3</div>
+							<img alt src="img_a3dt.png" style="width:100%">
+							<div class="text">Showcase of 'Sorbet Sky'. Just like Candy Cove, I designed this level with a focus on 4-step level design. In this level, the player has to jump between platforms and avoid the fireballs generated by the red boxes. When the player steps on a blue platform, it turns green, giving the player an extra challenge of turning all platforms green for a reward.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">A Christmas Thing is a <font color="aqua">3D Platformer</font> conceptualised as a christmas present for the YouTube celebrity "raocow". The player takes control of Demo, a cycloptic girl, on her quest to find Super Leeks. The game spans two stages and a boss fight. It serves as a <font color="aqua">tech demo for a future Unity Engine framework</font> and was developed over the course of three months.
+							<br><br>
+							<font color="aqua">My role</font> in this game was to <font color="aqua">design the hub and two platforming stages</font>. In order to do so, I created a few textures and meshes and helped out with the game's programming by creating a script for moving platforms.</article>
+						</div>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td colspan="2" >
+						<div class="subTitleBoundaryV2" width="50%" style="text-align: center">
+							<article class="textField" style="font-size: 250%">H2Ω: Ohm's Lab (2017)</article>
+							<article class="textField">
+								Roles: Artist, Programmer, Level Designer
+							</article>
+							<article class="textField">
+								Team size: 5 people
+							</article>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:50%;">
+						<div class="slideshow-container" style="margin-left:20px">
+
+						  <div class="mySlides3" style="display:block;">
+							<div class="numbertext">1 / 3</div>
+							<img alt src="img_h1ohm.png" style="width:100%;">
+							<div class="text">The title screen serves as an interactive tutorial. In order to play the game, the player has to perform a dash move through the glass to shatter it. He also has the opportunity to take out a defenseless enemy.</div>
+						  </div>
+
+						  <div class="mySlides3">
+							<div class="numbertext">2 / 3</div>
+							<img alt src="img_h2ohm.png" style="width:100%">
+							<div class="text">While moving upwards through the game's level, the player will encounter different types of enemies with unique behaviours. He will also need to keep an eye on his boost gauge, since without a boost he won't be able to cross the occasional glass barrier.</div>
+						  </div>
+
+						  <div class="mySlides3">
+							<div class="numbertext">3 / 3</div>
+							<img alt src="img_h3ohm.png" style="width:100%">
+							<div class="text">Water is an everpresent threat in this game. Move too slowly and it's game over.</div>
+						  </div>
+
+						  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+						</div>
+						<br>
+					</td>
+					<td style="vertical-align: center">
+						<div class="textBoundaryV2" style="margin-top: 0">
+							<article class="textField">H2Ω is a <font color="aqua">2D Arcade Game</font> about a security robot who finds his lab flooded and all other robots out of control. Now his goal is to defend himself against his former companions and escape the lab before the water catches up to him. It was developed over the course of five months.
+							<br><br>
+							I was the <font color="aqua">lead programmer for this game, but also created art for the HUD and made sound effects</font>. The game's stage was also laid out by me.
+							</article>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "centerContent">
+			<div class = "titleBoundaryV2" style="width: 50%">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Fan Projects
+				</h2>
+			</div>
+		</div>
+		<div class = "centerContent">
+			<div class = "subTitleBoundaryV2" style="width: 50%">
+				<article class="textField">
+					Below is a reverse timeline of projects that I have created in my free time to improve my skills. All copyright for assets and music goes to their respective owners.
+				</article>
+			</div>
+		</div>
+		<div class = "centerContent">
+			<div class = "subTitleBoundaryV2" style="width: 30%; text-align: center;">
+				<article class="textField" style="font-size: 200%">
+					2020
+				</article>
+			</div>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">2k1x Subzero Heroes</article>
+			<article class="textField">
+				Further info at the top of the page. <a href="https://www.supermariobrosx.org/forums/viewtopic.php?f=36&t=26235">Release topic!</a>
+			</article>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">SMBX2 Beta 4</article>
+			<article class="textField">
+				The current version of the SMBX2 extension for the SMBX fan engine, adding countless new items and options for designers, while ironing out bugs present in the preview release.
+			</article>
+		</div>
+		<div class = "centerContent">
+			<div class = "subTitleBoundaryV2" style="width: 30%; text-align: center;">
+				<article class="textField" style="font-size: 200%">
+					2019
+				</article>
+			</div>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">Helpless and Healthless</article>
+			<article class="textField">
+				Made in 48 hours for the GMTK Game Jam 2019. It placed 990th out of 2632 entries, with an average score of 3.3/5. <a href="https://enjl.itch.io/hah">Play on itch.io!</a>
+			</article>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">SMBX2 PAL Build</article>
+			<article class="textField">
+				A prerelease of the next version of the SMBX2 extension for the SMBX fan engine, adding countless new items and options for designers and starting a public testing program.
+			</article>
+		</div>
+		<div class = "centerContent">
+			<div class = "subTitleBoundaryV2" style="width: 30%; text-align: center;">
+				<article class="textField" style="font-size: 200%">
+					2018
+				</article>
+			</div>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">Pinball Pirate's Curse</article>
+			<article class="textField">
+				Made in 48 hours for the GMTK Game Jam 2018. It placed 175th out of 1055 entries, with an average score of 3.7/5. <a href="https://enjl.itch.io/pinball-pirates-curse">Play on itch.io!</a>
+			</article>
+		</div>
+		<div class = "centerContent">
+			<div class = "subTitleBoundaryV2" style="width: 30%; text-align: center;">
+				<article class="textField" style="font-size: 200%">
+					2017
+				</article>
+			</div>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">Summer Makeover</article>
+			<article class="textField">
+					A game in the 2k1x series using the SMBX fan engine.
+			</article>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">Make a Good Mega Man Level 2</article>
+			<article class="textField">
+					A compilation of levels for a contest using GameMaker.
+			</article>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">Level Contest Japan</article>
+			<article class="textField">
+					A compilation of levels for a contest in the SMBX fan engine.
+			</article>
+		</div>
+		<div class = "centerContent">
+			<div class = "subTitleBoundaryV2" style="width: 30%; text-align: center;">
+				<article class="textField" style="font-size: 200%">
+					2016
+				</article>
+			</div>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">December Collapse</article>
+			<article class="textField">
+					A game in the 2k1x series using the SMBX fan engine.
+			</article>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">Hypnosis Redo</article>
+			<article class="textField">
+					A game in the 2k1x series using the SMBX fan engine.
+			</article>
+		</div>
+		<div class="textBoundaryV2" style="width:65%; text-align: center;">
+			<article class="textField" style="font-size: 200%">SMBX2 Beta 3</article>
+			<article class="textField">
+					A release of the SMBX2 extension for the SMBX fan engine.
+			</article>
+		</div>
+		<div class = "centerContent">
+			<div class = "titleBoundaryV2" style="width:50%; text-align: center">
+				<h2 class="textField" style="font-size: 250%; text-align: center;">
+					Contact
+				</h2>
+			</div>
+		</div>
+		<div class = "titleBoundaryV2">
+			<article class="textField">
+				<div style="font-size:150%">
+					Want to get in touch?
+			</div>
+			</article>
+			<article class="textField">
+				<div><p>
+					Henri Beeres<br>
+					Kolpingstraße 16<br>
+					51379 Leverkusen
+					<br>
+					</p><p><strong>Kontakt:</strong> <br>
+					Phone: +49 2171-764660<br>
+					E-Mail: <a href="mailto:henri.beeres@unitybox.de">henri.beeres@unitybox.de</a><br></p><p>
+					<a href="impressum.html">Impressum</a>
+			</p>
+			</div>
+			</article>
+		</div>
+	</div>
+</body>
+</html>

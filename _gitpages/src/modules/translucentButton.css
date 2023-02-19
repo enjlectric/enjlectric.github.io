@@ -1,0 +1,67 @@
+.translucentButton, .translucentDropdown {
+    background-color: #0000;
+    mix-blend-mode: screen;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid #aaa;
+    position: relative;
+    border-radius: 0px;
+    color: #aaa;
+    padding: 12px 34px;
+    text-decoration: none;
+    margin: 4px;
+    display: inline-flex;
+ }
+
+ .dropdownTranslucentButton {
+   font-size: 15px;
+   background-color: #0000;
+   mix-blend-mode: screen;
+   transition: all 0.2s ease-in-out;
+   border-bottom: 2px solid #aaa;
+   position: relative;
+   border-radius: 0px;
+   color: #aaa;
+   padding: 12px 24px;
+   text-decoration: none;
+   margin: 4px;
+   display: inline-flex;
+ }
+
+ .translucentDropdown .dropdownContent {
+   position: absolute;
+   display: flexbox;
+   flex-direction: column;
+   left: -10px;
+   right: -10px;
+   top: 64px;
+   padding-bottom: 10px;
+   flex-wrap: nowrap;
+   background-color: #102030ff;
+   pointer-events: none;
+   opacity: 0;
+ }
+
+ .translucentDropdown:hover .dropdownContent {
+    pointer-events: all;
+   opacity: 1;
+ }
+ 
+ .dropdownTranslucentButton:hover{
+    background-color: #602f41ff;
+    border-color: #aaa;
+    color: #cce;
+    cursor: pointer;
+ }
+ 
+ .translucentButton:hover, .translucentDropdown:hover{
+    background-color: #602f41ff;
+    border-color: #aaa;
+    color: #cce;
+    cursor: pointer;
+    animation-play-state:running;
+ }
+ 
+ .translucentButtonActive {
+    border-color: #602f41ff;
+    color: #cce;
+ }

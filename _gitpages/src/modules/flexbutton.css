@@ -1,0 +1,86 @@
+
+
+.flexButtonContainer {
+    display: inline-flex;
+    flex: 0 0 600px;
+    margin: 10px;
+    border-radius: 12px;
+    padding: 10px;
+    justify-content:flex-start;
+    align-self: stretch;
+    align-items:flex-start;
+    flex-direction: column;
+    transition: filter 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.typeElement {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 0px 15px 4px 15px;
+    height: 40px;
+    justify-content: center;
+    line-height: 0%;
+    text-align: center;
+    border-radius: 22px;
+}
+
+.absoluteFlexWrapper {
+    position: absolute;
+    padding-top: -50%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+
+.absoluteFlexChild{
+    position: relative;
+    width: inherit;
+    font-size: 200%;
+    height: 100%;
+    transform: translateY(-105%);
+    margin: 0px;
+}
+
+.flexButtonContainer .coolLink {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+.flexButtonHover{
+    display: flexbox;
+    flex: none;
+    background-color: darkslategrey;
+    padding-top: 56.125%;
+    margin: 20px;
+    width: calc(100% - 40px);
+    position: relative;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, filter 0.2s ease-in-out;
+ }
+ .flexImage {
+    margin-top: -0.5%;
+    margin-left: -1.25%;
+    width: 102%;
+    height: 102%;
+    transition: margin-left 0.1s ease-out, margin-top 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out;
+ }
+
+.flexImage.hovered {
+    filter:brightness(70%);
+    cursor: pointer;
+    color: #c06fa1ff;
+}
+
+ .flexButtonContainer.hovered {
+    filter:brightness(70%);
+    color: #c06fa1ff;
+    cursor: pointer;
+ }
+ 
+ .flexButtonHover:hover {
+    z-index: 1;
+ }
