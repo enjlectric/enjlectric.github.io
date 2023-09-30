@@ -32,7 +32,7 @@ class Project extends React.Component {
                 <p>
                     Reloading adds an extra layer of strategy to the game. You can only reload when you are out of bullets, so you might want to waste your last bullet during moments of downtime, to better prepare yourself for the next set of enemies. On the other hand, the closer an enemy gets to the player, the more points are awarded for a kill. So it might be more profitable to wait just a little longer for some extra points. These two mechanics in particular contribute to a lot of the fun in the game, I think, as they create a push and pull that force the player to react.
                 </p>
-                <span>Hotel Marcel is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/hotel-marcel">Itch.io</a></span>
+                <span className="hl">Hotel Marcel is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/hotel-marcel">Itch.io</a></span>
             </div>
         )
     }

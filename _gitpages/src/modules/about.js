@@ -10,23 +10,23 @@ class About extends React.Component {
                 </h1>
                 <img src={portrait} alt="Portrait" className="reflectiveImage" style={{width: "250px", float: "right", borderRadius: "20px", margin: "20px 10%"}}/>
                 <p>
-                    My name is Henri Beeres. I'm a German game dev who specializes in <span>programming and design</span>.
+                    My name is Henri Beeres. I'm a German game dev who specializes in <span className="hl">programming and design</span>.
                 </p>
                 <p>
-                    I've been working on game-related projects in my free time since 2010. In 2016, I began studying at the Mediadesign Hochschule Düsseldorf where in 2019 I obtained my B.Sc. in Game Design. Over the years I have worked on many aspects of games, including Level Design, Back- and Front-End Programming, UI/UX Design, creating Pixel Art, as well as creating Music and Sound Effects. If you would like to get in touch, please email me at <a className="coolLink" style={{padding: "2px 6px"}} href="mailto:henri.beeres@unitybox.de">henri.beeres@unitybox.de</a> or shoot me a DM on Discord at @Enjl#6208.
+                    I've been working on game-related projects in my free time since 2010. In 2016, I began studying at the Mediadesign Hochschule Düsseldorf where in 2019 I obtained my B.Sc. in Game Design. Over the years I have worked on many aspects of games, including Level Design, Back- and Front-End Programming, UI/UX Design, creating Pixel Art, as well as creating Music and Sound Effects. If you would like to get in touch, please email me at <a className="coolLink" style={{padding: "2px 6px"}} href="mailto:henri.beeres@unitybox.de">henri.beeres@unitybox.de</a> or shoot me a DM on Discord at @enjl.
                 </p>
                 <div style={{clear: "both"}}></div>
                 <h2>
                     Programming and scripting
                 </h2>
                 <p>
-                    C#, JavaScript (ReactJS), Lua, C++, GLSL, HLSL
+                    C++, C#, JavaScript (ReactJS), Lua, GDScript, GLSL, HLSL
                 </p>
                 <h2>
                     Software
                 </h2>
                 <p>
-                    Unity, Git, Unreal, Perforce, GameMaker, Paint.NET
+                    Unreal, Unity, Godot, Git, Qt, Perforce, GameMaker, MS Office, Paint.NET, LMMS
                 </p>
                 {/* <h2>
                     Programming and scripting

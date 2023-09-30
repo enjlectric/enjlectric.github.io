@@ -19,7 +19,7 @@ class Project extends React.Component {
                     Overview
                 </h2>
                 <p>
-                    Laser Kart is a top-down bullet hell game, created in 9 days for Bullet Hell Jam 2022. It features 2 stages, each ending in their own grand boss fight. The premise of Laser Kart was <span>to do everything Laser Cat did the year before, but bigger and better</span>.
+                    Laser Kart is a top-down bullet hell game, created in 9 days for Bullet Hell Jam 2022. It features 2 stages, each ending in their own grand boss fight. The premise of Laser Kart was <span className="hl">to do everything Laser Cat did the year before, but bigger and better</span>.
                 </p>
                 <h2>
                     Entities
@@ -56,7 +56,7 @@ class Project extends React.Component {
                 <p>
                     In the end, while coroutines do make the setup of the game state quick and intuitive, I am planning to switch to a callback-based state machine with exception handling in case of unexpected malfunctions when building my next game that makes me think of building a coroutine structure.
                 </p>
-                <span>Laser Kart is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/laser-kart">Itch.io</a></span>
+                <span className="hl">Laser Kart is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/laser-kart">Itch.io</a></span>
             </div>
         )
     }

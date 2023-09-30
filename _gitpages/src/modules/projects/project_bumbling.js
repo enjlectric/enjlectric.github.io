@@ -69,7 +69,7 @@ class Project extends React.Component {
                 </video>
                 <h6>So close!</h6>
 
-                <span>Bumbling Builders is available for free on: <a target="_blank" rel='noreferrer' href="https://oroshibu.itch.io/bumbling-builders">Itch.io</a></span>
+                <span className="hl">Bumbling Builders is available for free on: <a target="_blank" rel='noreferrer' href="https://oroshibu.itch.io/bumbling-builders">Itch.io</a></span>
             </div>
         )
     }

@@ -26,7 +26,7 @@ class Project extends React.Component {
                 <p>
                     The color mechanic in its implementation, despite being very leniently implemented, struggles from the breakneck pace of the game. It is difficult to color-pick a new color in the middle of the action, and not in the satisfying manner. Similar mechanics that may be more simple to control include Ikaruga's color change or Crosscode's elemental shift, which are intuitive thanks to not relying on a constant in an ever-changing environment. I will put extra care into the intuitiveness of such elemental change mechanics in future titles.
                 </p>
-                <span>Inkjet is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/inkjet">Itch.io</a></span>
+                <span className="hl">Inkjet is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/inkjet">Itch.io</a></span>
             </div>
         )
     }

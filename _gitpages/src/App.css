@@ -161,8 +161,12 @@ td {
    background-color: #602f41ff;
    color: #ccc;
    font-weight: 500;
+   font-size: medium;
+   font-size-adjust: 0.5;
    padding: 0px 20px;
+   margin: auto 20px;
    display: inline-block;
+   text-align: center;
    border: none;
    border-radius: 10px;
    text-decoration: none;
@@ -211,17 +215,15 @@ td {
    transition: all 0.2s ease-in-out;
 }
 
-span {
+.hl {
    color: #c06fa1ff;
 }
 
 .timelineEntry {
-   min-height: 125px;
    vertical-align: middle;
-   margin: 10px;
-   padding: 10px;
+   margin: 10px 15%;
    text-align: left;
-   border-radius: 12px;
+   min-width: 720px;
 }
 
 .underlinedHeader {
@@ -275,6 +277,66 @@ span {
    width: 90%;
    max-width: 2000px;
    margin: auto;
+}
+
+.foldoutCollapsible {
+   background-color: transparent;
+   border: 4px solid #8686a6;
+   color: white;
+   cursor: pointer;
+   margin-top: 10px;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   border-radius: 20px;
+ }
+
+ .speedRound {
+   border: 2px solid #8686a6;
+   padding: 4px;
+   margin: 4px;
+   border-radius: 4px;
+ }
+ 
+ .foldoutActive, .foldoutCollapsible:hover {
+   background-color: #555575;
+ }
+ .foldoutActive {
+   border-radius: 20px 20px 0px 0px;
+ }
+ 
+ .foldoutCollapsible:after {
+   content: '\002B';
+   color: white;
+   font-weight: bold;
+   float: right;
+   margin-left: 5px;
+ }
+ 
+ .foldoutActive:after {
+   content: "\2212";
+ }
+ 
+ .foldoutContent {
+   text-align: left;
+   padding: 0 18px;
+   max-height: 0;
+   display:block;
+   line-break:normal;
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   border-radius: 0px 0px 20px 20px;
+   background-color: #0d1117;
+ }
+
+.dividerH {
+   border-left: 1px solid #602f41ff;
+   display: inline-flex;
+   height:250px;
+   justify-self: center;
+   margin: auto 20px;
 }
 
 .divider {

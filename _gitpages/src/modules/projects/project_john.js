@@ -42,12 +42,12 @@ class Project extends React.Component {
                 <h6>Greeting the noble golem by the seaside.</h6>
                 <h2>Modeling</h2>
                 <p>
-                    As is evident, I don't have a lot of experience in 3D modeling. For this game, I have tried using <span>UModeler</span> for the first time. I ran into all the expected issues of UV unwrapping, hotkeys, and meshes falling apart due to a geometry-breaking operation, as well as some unexpected issues like trying to properly pivot meshes made with the tool. Strapped for time, I often overcame these issues via brute force, taking notes on operations to return to and figure out properly. Operations such as texture tiling were a complete mystery to me during the jam, but are now second nature, so I consider this experience a success in that regard.
+                    As is evident, I don't have a lot of experience in 3D modeling. For this game, I have tried using <span className="hl">UModeler</span> for the first time. I ran into all the expected issues of UV unwrapping, hotkeys, and meshes falling apart due to a geometry-breaking operation, as well as some unexpected issues like trying to properly pivot meshes made with the tool. Strapped for time, I often overcame these issues via brute force, taking notes on operations to return to and figure out properly. Operations such as texture tiling were a complete mystery to me during the jam, but are now second nature, so I consider this experience a success in that regard.
                 </p>
                 <img src={IMG_John_0} style={{maxWidth:"800px"}} alt="A room made in UModeler after the game's completion."/>
                 <h6>A room I made with UModeler after the game's completion.</h6>
 
-                <span>My Neighbour, John is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/my-neighbour-john">Itch.io</a></span>
+                <span className="hl">My Neighbour, John is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/my-neighbour-john">Itch.io</a></span>
             </div>
         )
     }

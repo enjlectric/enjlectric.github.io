@@ -10,10 +10,15 @@ class FancyImageButton extends React.Component {
 
     static img;
 
+
     constructor(props) {
         super(props);
 
-        this.img = require("../images/" + (props.element.imgName ?? "thumbnails_none.png"));
+        var name = props.element.imgName
+        if (name == null) {
+            name = "thumbnails_none.png"
+        }
+        this.img = require("../images/" + name);
     }
 
     render() {
@@ -21,7 +26,7 @@ class FancyImageButton extends React.Component {
         <div className="imageHoverContainerT">
             <div className="imageHoverT">
                 <div className="absoluteWrapper">
-                    <img className="imageHoverImageT" src={this.img.default} alt={this.props.element.imgName}/>
+                    <img className="imageHoverImageT" src={this.img} alt={this.props.element.imgName}/>
                 </div>
                 <div className="absoluteWrapper">
                     <a href={this.props.element.playLink} target="_blank" rel="noreferrer" style={{margin: "0px", padding: "0px"}}>

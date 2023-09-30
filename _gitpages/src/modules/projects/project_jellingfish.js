@@ -37,8 +37,8 @@ class Project extends React.Component {
                 <p>
                     As games, I am impressed with what we managed to accomplish for both games. The fact that both are enjoyable to play in spite of the troubled development is remarkable. When it comes to the games' character, however, I wonder if we ran head-first into a "too many cooks" situation, however, where too many people with creative control prevented the game from being truly stand-out. Should I find myself in a leadership position for a larger team again, I will attempt to verify this theory by introducing a more rigid team structure and keeping up documentation and communication as outlined in the first paragraph.
                 </p>
-                <span>Mr. Final Boss is available for free on: <a target="_blank" rel='noreferrer' href="https://jellingfish-games.itch.io/mr-final-boss">Itch.io</a></span>
-                <span>Dicemask is available for free on: <a target="_blank" rel='noreferrer' href="https://www.newgrounds.com/portal/view/project/1912516">Newgrounds.com</a></span>
+                <span className="hl">Mr. Final Boss is available for free on: <a target="_blank" rel='noreferrer' href="https://jellingfish-games.itch.io/mr-final-boss">Itch.io</a></span>
+                <span className="hl">Dicemask is available for free on: <a target="_blank" rel='noreferrer' href="https://www.newgrounds.com/portal/view/project/1912516">Newgrounds.com</a></span>
             </div>
         )
     }

@@ -15,19 +15,36 @@ class Parallax extends React.Component {
 
         for (let i=0; i < this.props.images.length; i++) {
             const template = this.props.images[i];
-
-            let xanchor = (template.anchorX ?? 0) * props.width - (template.anchorX ?? 0) * template.width;
-            let yanchor = (template.anchorY ?? 0) * props.height - (template.anchorY ?? 0) * template.height;
+            if (template.anchorX == null) {
+                template.anchorX = 0
+            }
+            if (template.anchorY == null) {
+                template.anchorY = 0
+            }
+            if (template.speedX == null) {
+                template.speedX = 0
+            }
+            if (template.speedY == null) {
+                template.speedY = 0
+            }
+            if (template.repeat == null) {
+                template.repeat = "no-repeat"
+            }
+            if (template.anchor == null) {
+                template.anchor = "middle"
+            }
+            let xanchor = (template.anchorX) * props.width - (template.anchorX) * template.width;
+            let yanchor = (template.anchorY) * props.height - (template.anchorY) * template.height;
 
             const scrollKeyframes = keyframes`100% { 
-                background-position: ${(template.speedX ?? 0) * template.width + xanchor}px ${(template.speedY ?? 0) * template.height + yanchor}px;
+                background-position: ${(template.speedX) * template.width + xanchor}px ${(template.speedY) * template.height + yanchor}px;
             }`
 
             let newEntry = {
                 anchorX: xanchor,
                 anchorY: yanchor,
-                repeat: template.repeat ?? "no-repeat",
-                anchor: template.anchor ?? "middle",
+                repeat: template.repeat,
+                anchor: template.anchor,
                 component: styled.div`
                 background-image: url(${template.img});
                 animation: ${scrollKeyframes} 25s linear infinite;

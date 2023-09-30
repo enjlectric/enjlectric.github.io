@@ -17,7 +17,11 @@ class FlexButton extends React.Component {
     constructor(props) {
         super(props);
 
-        this.img = require("../images/" + (props.element.screenshotName ?? "thumbnails_none.png"));
+        var name = props.element.screenshotName
+        if (name == null) {
+            name = "thumbnails_none.png"
+        }
+        this.img = require("../images/" + name);
         this.videoRef = React.createRef()
         this.state = {
             hovered: false,
@@ -63,7 +67,7 @@ class FlexButton extends React.Component {
                 <div className="absoluteFlexWrapper" 
                 onMouseOver={() => this.setState({hovered: this.props.element.video != null})}
                 onMouseOut={() => this.setState({hovered: false})}>
-                    <img className={classNames("flexImage", this.state.hovered ? "hovered" : "")} src={this.img.default} alt={this.props.element.imgName}/>
+                    <img className={classNames("flexImage", this.state.hovered ? "hovered" : "")} src={this.img} alt={this.props.element.imgName}/>
                     {this.props.element.video && <div className="absoluteFlexChild"
                     >
                         <h1

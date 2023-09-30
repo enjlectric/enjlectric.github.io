@@ -37,7 +37,7 @@ class FancyImageButton extends React.Component {
         <div className="imageHoverContainer">
             <div className="imageHover">
                 <div className="absoluteWrapper">
-                    <img className="imageHoverImage" src={this.img.default} alt={this.props.imgName}/>
+                    <img className="imageHoverImage" src={this.img} alt={this.props.imgName}/>
                 </div>
                 <div className="absoluteWrapper">
                     <a href={this.props.linkname} onClick={this.referLink.bind(this)} style={{margin: "0px", padding: "0px"}}>

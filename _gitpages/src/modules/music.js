@@ -6,10 +6,10 @@ class Music extends React.Component {
         return (
             <div style={{maxWidth: "1400px", margin: "auto"}}>
                 <p>
-                    I started getting more into music in 2018, slowly getting a hold on music theory and practicing using <span>LMMS</span>. Since then, I have picked it up as a hobby I regularly practice to get my mind off things. My current aim is to improve at general mixing and song structure.
+                    I started getting more into music in 2018, slowly getting a hold on music theory and practicing using <span className="hl">LMMS</span>. Since then, I have picked it up as a hobby I regularly practice to get my mind off things. My current aim is to improve at general mixing and song structure.
                 </p>
                 <p>
-                    <span>Melting</span> album (November 2022) 
+                    <span className="hl">Melting</span> album (November 2022) 
                 </p>
                 <div>
                     <BandcampLink
@@ -28,7 +28,7 @@ class Music extends React.Component {
                     />
                 </div>
                 <p>
-                    <span>Barry's Bog Jog</span> OST (March 2022) 
+                    <span className="hl">Barry's Bog Jog</span> OST (March 2022) 
                 </p>
                 <div>
                     <BandcampLink
@@ -42,7 +42,7 @@ class Music extends React.Component {
                     />
                 </div>
                 <p>
-                    <span>Chroma</span> album (February 2022) 
+                    <span className="hl">Chroma</span> album (February 2022) 
                 </p>
                 <div>
                     <BandcampLink
@@ -61,7 +61,7 @@ class Music extends React.Component {
                     />
                 </div>
                 <p>
-                    <span>Laser Cat</span> OST (September 2021) 
+                    <span className="hl">Laser Cat</span> OST (September 2021) 
                 </p>
                 <div>
                     <BandcampLink
@@ -75,7 +75,7 @@ class Music extends React.Component {
                     />
                 </div>
                 <p>
-                    <span>MEGAKILLER</span> album (August 2021)
+                    <span className="hl">MEGAKILLER</span> album (August 2021)
                 </p>
                 <div>
                     <BandcampLink
@@ -89,7 +89,7 @@ class Music extends React.Component {
                     />
                 </div>
                 <p>
-                    <span>We Are</span> album (March 2021)
+                    <span className="hl">We Are</span> album (March 2021)
                 </p>
                 <div>
                     <BandcampLink

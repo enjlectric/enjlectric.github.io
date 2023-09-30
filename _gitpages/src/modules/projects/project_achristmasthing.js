@@ -28,7 +28,7 @@ class Project extends React.Component {
                 </p>
                 <h2>Levels</h2>
                 <p>
-                    Both platforming levels I created follow the tried and true <span>4-Step Design</span> formula, where a gameplay mechanics is introduced, expanded upon, reimagined and finally utilized in an ultimate obstacle before the end of the level. Additionally, each of the two levels contains a bonus challenge for a secret collectible. Candy Cove features five green teeth collectibles which are slightly out of the player's way. Sorbet Sky has platforms with colours that change when touched. If all teeth are found or platforms were touched in one playthrough, the reward is granted. 
+                    Both platforming levels I created follow the tried and true <span className="hl">4-Step Design</span> formula, where a gameplay mechanics is introduced, expanded upon, reimagined and finally utilized in an ultimate obstacle before the end of the level. Additionally, each of the two levels contains a bonus challenge for a secret collectible. Candy Cove features five green teeth collectibles which are slightly out of the player's way. Sorbet Sky has platforms with colours that change when touched. If all teeth are found or platforms were touched in one playthrough, the reward is granted. 
                 </p>
                 <img src={IMG_xmas_1} style={{maxWidth: "800px"}} alt="A screenshot showing the first screen in the game."/>
                 <h6>Aerial views of Candy Cove on the left and Sorbet Sky on the right, highlighting the four steps of gimmick escalation.</h6>
@@ -39,7 +39,7 @@ class Project extends React.Component {
                     Sorbet Sky instead revolves around cannon boxes that periodically shoot fireballs in a straight line. While initially these are static and used as intercepts for jumps and to periodically heighten the danger of staying on a platform, the latter half of the level puts them into orbits, creating a moving element to mesh with the largely circular nature of the level's platforms in the second half.
                 </p>
 
-                <span>A Christmas Thing can be downloaded for free from <a target="_blank" rel='noreferrer' href="https://drive.google.com/file/d/1xTVs5oSYvGDRAwIO9aF0tpZ6NKnWOXii/view">Google Drive</a></span>
+                <span className="hl">A Christmas Thing can be downloaded for free from <a target="_blank" rel='noreferrer' href="https://drive.google.com/file/d/1xTVs5oSYvGDRAwIO9aF0tpZ6NKnWOXii/view">Google Drive</a></span>
             </div>
         )
     }

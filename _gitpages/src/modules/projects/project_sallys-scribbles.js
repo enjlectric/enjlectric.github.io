@@ -64,7 +64,7 @@ class Project extends React.Component {
                 <p>
                     Other scripts use these Scriptable Objects by referencing them in the inspector and then either accessing their value or registering themselves to an OnChange handler. In addition to this, the Scriptable Objects support both "production" and "debug" values, whose use can be toggled via a button in the editor. I've found myself often hacking in preprocessor instructions in past projects to facilitate testing, so with the use of fact variables I saw an opportunity to cut down on that antipattern. The finished script is visible on the project's <a target="_blank" rel='noreferrer' href="https://github.com/enjlectric/SallysScribbles/blob/main/Assets/Toybox/Scripts/ScriptableObjects/GameValue.cs">github page</a>. Needless to say, this system is one I will be carrying over into new projects, as it is comfortable to work with and decouples objects effectively.
                 </p>
-                <span>Sally's Scribbles is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/sallys-scribbles">Itch.io</a></span>
+                <span className="hl">Sally's Scribbles is available for free on: <a target="_blank" rel='noreferrer' href="https://enjl.itch.io/sallys-scribbles">Itch.io</a></span>
             </div>
         )
     }

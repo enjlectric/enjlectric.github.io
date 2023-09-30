@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
-    </style> 
+    </style>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
