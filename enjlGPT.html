@@ -131,9 +131,9 @@
             const botMessage = document.createElement('div');
             const botMessageContent = document.createElement('a');
             botMessage.classList.add('message', 'bot-message');
-            botMessageContent.href = "https://lmgtfy.com/?q=" + encodeURIComponent(userQuery);
+            botMessageContent.href = "https://letmegooglethat.com/?q=" + encodeURIComponent(userQuery);
             botMessageContent.target = "_blank"
-            botMessageContent.textContent = `https://lmgtfy.com/?q=${encodeURIComponent(userQuery)}`;
+            botMessageContent.textContent = `https://letmegooglethat.com/?q=${encodeURIComponent(userQuery)}`;
             botMessage.appendChild(botMessageContent);
             loadingAnimation.style.display = 'inline-block'; // Show loading animation
             setTimeout(() => {
