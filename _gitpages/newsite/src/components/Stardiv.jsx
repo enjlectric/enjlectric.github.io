@@ -62,6 +62,7 @@ export function Stardiv(props) {
 				{props.children}
 				</div>
 			</div>
+			{props.stardivnoclip}
 			<svg viewBox="0 0 1 1" width="1" height="1">
 			<clipPath id="stardivpath" clipPathUnits="objectBoundingBox">
 				<path d=''>

@@ -17,9 +17,38 @@ import Timeline from '../../components/Timeline';
 import Music from '../../components/Music';
 
 export function Home() {
+	function get_newspaper() {
+		return <div className="newspaper" style={{top: "22%"}}>
+			<h3>About me</h3>
+			<Sticker side = "tr" padh = "-35px" padv ="-60px"><DropElement><img src={herylimg}/></DropElement></Sticker>
+			<span style={{textAlign: "left"}}>
+				<li style={{listStyle: "none"}}>
+					<ul style={{color: "#2242f2"}}>
+						<span><i>I am</i></span>
+					</ul>
+					<ul>
+						<span>♪ Professional hobby enjoyer<br/>♪ he • they</span>
+					</ul>
+					<ul style={{color: "#2242f2"}}>
+						<span><i>I do</i></span>
+					</ul>
+					<ul>
+						<span>♪ Programbling<br/>♪ Game Desaign<br/>♪ Electromic Music<br/>♪ Digitel Art</span>
+					</ul>
+					<ul style={{color: "#2242f2"}}>
+						<span><i>I like</i></span>
+					</ul>
+					<ul>
+						<span>♪ Nintendo/Indie gamse<br/>♪ Electroric Music<br/>♪ The animals, mountains, outer space<br/>♪ Cute things, mischief, chaos, hubris, lying</span>
+					</ul>
+				</li>
+			</span>
+		</div>
+	}
+
 	return (
 		<div className="App">
-			<Stardiv>
+			<Stardiv stardivnoclip={get_newspaper()}>
 				<Sticker side = "tl"><img src={Sticker_Gradient}></img></Sticker>
 				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
 				<DropElement>
@@ -57,32 +86,6 @@ export function Home() {
 							Siteblog
 						</h3>
 						<span>I might write some things in the future. They will show up here.</span> */}
-					</div>
-					<div className="newspaper">
-						<h3>About me</h3>
-						<Sticker side = "tr" padh = "-35px" padv ="-60px"><DropElement><img src={herylimg}/></DropElement></Sticker>
-						<span style={{textAlign: "left"}}>
-							<li style={{listStyle: "none"}}>
-								<ul style={{color: "#2242f2"}}>
-									<span><i>I am</i></span>
-								</ul>
-								<ul>
-									<span>♪ Professional hobby enjoyer<br/>♪ he • they</span>
-								</ul>
-								<ul style={{color: "#2242f2"}}>
-									<span><i>I do</i></span>
-								</ul>
-								<ul>
-									<span>♪ Programbling<br/>♪ Game Desaign<br/>♪ Electromic Music<br/>♪ Digitel Art</span>
-								</ul>
-								<ul style={{color: "#2242f2"}}>
-									<span><i>I like</i></span>
-								</ul>
-								<ul>
-									<span>♪ Nintendo/Indie gamse<br/>♪ Electroric Music<br/>♪ The animals, mountains, outer space<br/>♪ Cute things, mischief, chaos, hubris, lying</span>
-								</ul>
-							</li>
-						</span>
 					</div>
 				</DropElement>
 			</Stardiv>
