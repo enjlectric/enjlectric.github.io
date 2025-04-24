@@ -1,0 +1,49 @@
+
+.nyxelCorner {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.overlapImg {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.nyxel {
+    position:absolute;
+    right: 40px;
+    bottom: 60px;
+}
+
+.speechBubble {
+    position:absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    bottom: 80px;
+    padding: 16px 24px;
+    filter: drop-shadow(0px 0px 8px black);
+    background-color: #fefafe;
+    border-radius: 40px;
+}
+
+.speechBubble:after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 24px solid transparent;
+    border-left-color: #fefafe;
+    border-left-width: 46px;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -12px;
+    margin-right: -48px;
+}

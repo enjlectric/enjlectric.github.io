@@ -1,0 +1,164 @@
+/**************************/
+/* CSS Animations Classes */
+/**************************/
+
+/* 
+The following class-endings: *-enter, *-enter-active, *-exit, *-exit-active,
+have very specific meanings to <CSSTransition />
+(see more: https://reactcommunity.org/react-transition-group/css-transition)
+*/
+
+.center {        
+	display:block;
+	margin:auto;
+  }
+
+.fade-enter {
+	opacity: 0;
+	transform: translate(0, 25px);
+	z-index: 1;
+  }
+  .fade-enter.fade-enter-active {
+	opacity: 1;
+	transform: translate(0, 0);
+  
+	transition: opacity 250ms ease-out, transform 300ms ease;
+  }
+  .fade-exit {
+	opacity: 1;
+	transform: translate(0, 0);
+  }
+  .fade-exit.fade-exit-active {
+	opacity: 0;
+	transform: translate(0, 30px);
+  
+	transition: opacity 250ms ease-out, transform 300ms ease;
+  }
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 1.2em;
+
+	color: #222;
+	background-color: #ffffff;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+html {
+	width: 100vw;
+	height:100vh;
+	max-width: 100vw;
+}
+
+
+
+#app {
+	display: flex;
+	flex-direction: column;
+    background-image: url("./assets/space.png");
+    background-repeat: repeat;
+}
+
+.gluten-light {
+	font-family: "Gluten", cursive;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	  "slnt" 0;
+  }
+  
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	background-color: #673ab8;
+}
+
+header nav {
+	display: flex;
+}
+
+header a {
+	color: #fff;
+	padding: 0.75rem;
+	text-decoration: none;
+}
+
+header a.active {
+	background-color: #0005;
+}
+
+header a:hover {
+	background-color: #0008;
+}
+
+
+.tilt-l {
+	transform: rotate(-2deg);
+}
+.tilt-r {
+transform: rotate(2deg);
+}
+.tilt-l2x {
+transform: rotate(-5deg);
+}
+.tilt-r2x {
+transform: rotate(5deg);
+}
+
+.bouncy {
+	background-color: #00000022;
+	border-radius: 12px;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	align-items: center;
+	margin: auto;
+	font-size: medium;
+	text-align: center;
+	display: inline-block;
+	width: 38%;
+	margin: 6px;
+}
+
+.bouncy:hover {
+	img {
+		animation: wobble 0.75s infinite linear;
+	}
+	color: yellow;
+}
+
+.bouncy img {
+	margin: 0px 16px;
+}
+
+.bouncy span {
+	margin: 0px 16px;
+}
+
+@keyframes wobble {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(8deg);
+	}
+	75% {
+		transform: rotate(-8deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}

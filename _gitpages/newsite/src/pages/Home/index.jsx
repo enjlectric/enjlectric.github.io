@@ -1,0 +1,118 @@
+import { DropElement } from '../../components/DropElement';
+import { Stardiv } from '../../components/Stardiv';
+import { Sticker } from '../../components/Sticker';
+import Sticker_Stars from '../../assets/starsticker_1.png';
+import Sticker_Gradient from '../../assets/gradientsticker_1.png';
+import Kwee from '../../assets/kwee.gif';
+import Kwee2 from '../../assets/kwee2.gif';
+import herylimg from '../../assets/heryl.png';
+import icon_itch from '../../assets/itch.png';
+import icon_yout from '../../assets/youtube.png';
+import icon_band from '../../assets/bandcamp.png';
+import icon_bsky from '../../assets/bsky.png';
+import './style.css';
+import { useRef, useEffect, useCallback } from 'preact/hooks'
+import { Explainable } from '../../components/Explainable';
+import Timeline from '../../components/Timeline';
+import Music from '../../components/Music';
+
+export function Home() {
+	return (
+		<div className="App">
+			<Stardiv>
+				<Sticker side = "tl"><img src={Sticker_Gradient}></img></Sticker>
+				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
+				<DropElement>
+					<span>
+						You are now entering the <i>Enjl Zone</i>.
+					</span>
+					<br/>
+					<br/>
+					<div className="tilt-l" style={{marginLeft: "182px", marginTop: "-20px"}}>
+						(Your one-stop shop for all things Enjl)
+					</div>
+					<br/>
+					<div className="leftside">
+						<h3>
+							The Webotron
+						</h3>
+
+						Use the webotron! It's good for you!
+						<br/>
+						<br/>
+
+						<a className={"bouncy"} target="_blank" rel="noopener noreferrer" href="https://enjl.itch.io/"><img src={icon_itch}></img><br/>games</a>
+						<a className={"bouncy"} target="_blank" rel="noopener noreferrer" href="https://enjl.bandcamp.com/"><img src={icon_band}></img><br/>music</a>
+						<a className={"bouncy"} target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/enjl.awakens.today"><img src={icon_bsky}></img><br/>words</a>
+						<a className={"bouncy"} target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@enjlectric"><img src={icon_yout}></img><br/>videos</a>
+						{/* <h3>
+							Game Projects
+						</h3>
+						<span>Games</span>
+						<h3>
+							Hobbies
+						</h3>
+						<span>Links to art and music pages</span>
+						<h3>
+							Siteblog
+						</h3>
+						<span>I might write some things in the future. They will show up here.</span> */}
+					</div>
+					<div className="newspaper">
+						<h3>About me</h3>
+						<Sticker side = "tr" padh = "-35px" padv ="-60px"><DropElement><img src={herylimg}/></DropElement></Sticker>
+						<span style={{textAlign: "left"}}>
+							<li style={{listStyle: "none"}}>
+								<ul style={{color: "#2242f2"}}>
+									<span><i>I am</i></span>
+								</ul>
+								<ul>
+									<span>♪ Professional hobby enjoyer<br/>♪ he • they</span>
+								</ul>
+								<ul style={{color: "#2242f2"}}>
+									<span><i>I do</i></span>
+								</ul>
+								<ul>
+									<span>♪ Programbling<br/>♪ Game Desaign<br/>♪ Electromic Music<br/>♪ Digitel Art</span>
+								</ul>
+								<ul style={{color: "#2242f2"}}>
+									<span><i>I like</i></span>
+								</ul>
+								<ul>
+									<span>♪ Nintendo/Indie gamse<br/>♪ Electroric Music<br/>♪ The animals, mountains, outer space<br/>♪ Cute things, mischief, chaos, hubris, lying</span>
+								</ul>
+							</li>
+						</span>
+					</div>
+				</DropElement>
+			</Stardiv>
+			<div>
+				<img className="kwee" id="kwee1" src={Kwee2}></img>
+				<img className="kwee" id="kwee2" src={Kwee2}></img>
+				<img className="kwee" id="kwee3" src={Kwee2}></img>
+				<img className="kwee" id="kwee4" src={Kwee2}></img>
+				<img className="kwee" id="kwee5" src={Kwee}></img>
+			</div>
+			<div className="center"><h2>Check a look of this<br/>And by "this" I mean, heh, well..</h2></div>
+{/* 
+			<div style={{display: "flex", maxWidth: "960px", margin: "auto", width: "80%"}}>
+				<button className={"CoolRadio"}>Timeline</button>
+				<button className={"CoolRadio"}>Blog</button>
+				<button className={"CoolRadio"}>Music</button>
+				<button className={"CoolRadio"}>Art</button>
+			</div> */}
+
+			<Stardiv>
+				<Sticker side = "tl"><img src={Sticker_Gradient}></img></Sticker>
+				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
+				<DropElement>
+					<div style={{textAlign: "center"}} className={"center"}>
+						<h3>This section only has music so far.</h3>
+						More options to come in a future DLC.
+						<Music></Music>
+					</div>
+				</DropElement>
+			</Stardiv>
+		</div>
+	)
+}
