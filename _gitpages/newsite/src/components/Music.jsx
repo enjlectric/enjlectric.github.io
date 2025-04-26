@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'preact';
 import BandcampLink from './BandcampLink';
 
-class Music extends React.Component {
+class Music extends Component {
     render() {
         return (
             <div style={{maxWidth: "1400px", margin: "auto"}}>

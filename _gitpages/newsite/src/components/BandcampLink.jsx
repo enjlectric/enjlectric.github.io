@@ -1,6 +1,6 @@
-import React from 'react';
+import { Component } from 'preact';
 
-class BandcampLink extends React.Component {
+class BandcampLink extends Component {
     static defaultProps = {
         src: "",
         name: "Song",

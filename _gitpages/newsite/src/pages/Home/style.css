@@ -42,6 +42,25 @@ html {
     animation: border 250ms ease-in-out;
 }
 
+.CoolRadioA {
+    min-width: auto;
+    margin: 10px;
+    align-self: center;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 12px;
+    background: linear-gradient(#573738, #a67699);
+    border: 2px solid transparent;
+    padding: auto auto;
+    animation: border 250ms ease-in-out;
+}
+
+.CoolRadioA:hover {
+    border: 2px solid greenyellow;
+}
+
 .CoolRadio:hover {
     background: linear-gradient(#573738, #a67699);
     border: 2px solid orange;

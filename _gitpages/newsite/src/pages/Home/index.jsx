@@ -11,10 +11,11 @@ import icon_yout from '../../assets/youtube.png';
 import icon_band from '../../assets/bandcamp.png';
 import icon_bsky from '../../assets/bsky.png';
 import './style.css';
-import { useRef, useEffect, useCallback } from 'preact/hooks'
+import { useRef, useEffect, useCallback, useState } from 'preact/hooks'
 import { Explainable } from '../../components/Explainable';
 import Timeline from '../../components/Timeline';
 import Music from '../../components/Music';
+import Games from '../../components/Games';
 
 export function Home() {
 	function get_newspaper() {
@@ -45,6 +46,8 @@ export function Home() {
 			</span>
 		</div>
 	}
+
+	const [tab, setTab] = useState(0)
 
 	return (
 		<div className="App">
@@ -97,15 +100,33 @@ export function Home() {
 				<img className="kwee" id="kwee5" src={Kwee}></img>
 			</div>
 			<div className="center"><h2>Check a look of this<br/>And by "this" I mean, heh, well..</h2></div>
-{/* 
-			<div style={{display: "flex", maxWidth: "960px", margin: "auto", width: "80%"}}>
-				<button className={"CoolRadio"}>Timeline</button>
-				<button className={"CoolRadio"}>Blog</button>
-				<button className={"CoolRadio"}>Music</button>
-				<button className={"CoolRadio"}>Art</button>
-			</div> */}
 
-			<Stardiv>
+			<div style={{display: "flex", maxWidth: "960px", margin: "auto", width: "80%"}}>
+				<button onClick={() => setTab(0)} className={tab == 0 ? "CoolRadioA" : "CoolRadio"}>Games</button>
+				<button onClick={() => setTab(1)} className={tab == 1 ? "CoolRadioA" : "CoolRadio"}>Music</button>
+				{/* <button onClick={() => setTab(2)} className={tab == 2 ? "CoolRadioA" : "CoolRadio"}>Creatures</button> */}
+			</div>
+
+
+			{(tab == 0) ? <Stardiv>
+				<Sticker side = "tl"><img src={Sticker_Gradient}></img></Sticker>
+				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
+				<DropElement>
+					<div style={{textAlign: "center"}} className={"center"}>
+						<Games></Games>
+					</div>
+				</DropElement>
+			</Stardiv> : null}
+			{(tab == 1) ? <Stardiv>
+				<Sticker side = "tl"><img src={Sticker_Gradient}></img></Sticker>
+				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
+				<DropElement>
+					<div style={{textAlign: "center"}} className={"center"}>
+						<Music></Music>
+					</div>
+				</DropElement>
+			</Stardiv> : null}
+			{(tab == 2) ? <Stardiv>
 				<Sticker side = "tl"><img src={Sticker_Gradient}></img></Sticker>
 				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
 				<DropElement>
@@ -115,7 +136,7 @@ export function Home() {
 						<Music></Music>
 					</div>
 				</DropElement>
-			</Stardiv>
+			</Stardiv> : null}
 		</div>
 	)
 }
