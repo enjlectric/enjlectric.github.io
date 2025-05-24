@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <style type="text/css">
+        html, body{
+            overflow:hidden;
+            display: inline;
+            height: 100%;
+            min-height: 100%;
+            overflow-x: scroll;
+            width: auto;
+            white-space: nowrap;
+        }
+        object {
+            min-height: 100vh;
+            height: 100vh;
+            min-width: 600px;
+        }
+    </style>
+    <script>
+        let url = window.location.href 
+        let firstpart = url.substring(0,url.lastIndexOf("/")) + "/"
+        function loadPage(href)
+        {
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", firstpart + href, false);
+            xmlhttp.send();
+            return xmlhttp.responseText;
+        }
+
+        function readFile(file) {
+            let obj = document.createElement("object")
+            obj.style.width = "640px"
+            obj.data = file[0]
+            document.getElementById("container").appendChild(obj)
+        } 
+        onload = (event) => {
+            let main = loadPage("index.html")
+            let array = [...main.matchAll(/(Arc%20[0-9]+\/[A-z0-9%\-\/\. ]+)/g)];
+            array.forEach(readFile)
+        }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Brokenpicturephone CRAWLER</title>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+</html>

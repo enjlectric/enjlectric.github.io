@@ -1,0 +1,160 @@
+.App {
+    margin: auto;
+    flex-grow: 1;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+html {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.kwee {
+    position: relative;
+    display: inline;
+    object-position: 50% 50%;
+    margin-right: -50px;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    transform: none;
+}
+
+.CoolRadio {
+    min-width: auto;
+    margin: 10px;
+    align-self: center;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 12px;
+    background: linear-gradient(#373738, #767699);
+    border: 2px solid transparent;
+    padding: auto auto;
+    animation: border 250ms ease-in-out;
+}
+
+.CoolRadioA {
+    min-width: auto;
+    margin: 10px;
+    align-self: center;
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 12px;
+    background: linear-gradient(#573738, #a67699);
+    border: 2px solid transparent;
+    padding: auto auto;
+    animation: border 250ms ease-in-out;
+}
+
+.CoolRadioA:hover {
+    border: 2px solid greenyellow;
+}
+
+.CoolRadio:hover {
+    background: linear-gradient(#573738, #a67699);
+    border: 2px solid orange;
+}
+
+.newspaper, .span {
+    font-size: medium;
+}
+
+.leftside {
+    display: inline-block;
+    width: 50%;
+}
+
+.newspaper {
+    display: inline-block;
+    width: 45%;
+    position: absolute;
+    text-align: center;
+    left: 55%;
+    filter: drop-shadow(4px 4px 4px #22228877);
+    margin-right: 0px;
+    transform: rotate(0.2deg);
+    background: linear-gradient(#a7b7c7, #8787a7);
+    border-radius: 4px;
+    color: #1a1a37;
+    line-height: 1.3em;
+    padding-top: 2px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+}
+
+#kwee1 {
+    animation: kwee-anim 8s linear infinite;
+    animation-delay: -1.3s;
+    margin-left: 16px;
+}
+
+.leftside h3 {
+    color: #87b6f7;
+}
+
+h2 {
+    margin: auto;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    background: -webkit-linear-gradient(#81ffcf, #2861ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#kwee2 {
+    animation: kwee-anim 8s linear infinite;
+    animation-delay: -1.6s;
+    margin-left: 16px;
+}
+
+#kwee3 {
+    animation: kwee-anim 8s linear infinite;
+    animation-delay: -1.9s;
+    margin-left: 16px;
+}
+
+#kwee4 {
+    animation: kwee-anim 8s linear infinite;
+    animation-delay: -2.2s;
+    margin-left: 16px;
+}
+
+#kwee5 {
+    animation: kwee-anim 8s linear infinite;
+    animation-delay: -2.5s;
+}
+
+@keyframes kwee-anim {
+    0% {
+        transform: translateX(0px) scaleX(1);
+    }
+    24% {
+        transform: translateX(-250px) scaleX(1);
+    }
+    25% {
+        transform: translateX(-250px) scaleX(-1);
+    }
+    74% {
+        transform: translateX(250px) scaleX(-1);
+    }
+    75% {
+        transform: translateX(250px) scaleX(1);
+    }
+    100% {
+        transform: translateX(0px) scaleX(1);
+    }
+}

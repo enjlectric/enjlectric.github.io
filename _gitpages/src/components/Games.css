@@ -1,0 +1,136 @@
+.games_container {
+    background-color: black;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+}
+
+.games_container_full {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.gametitle {
+    font-size: xx-large;
+    margin: auto;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    background: -webkit-linear-gradient(#81ffcf, #78ccff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.playButton {
+    border: 4px solid black;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 4px #22228877);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #002464a2;
+    background-blend-mode:darken;
+    /* background-image: url("../images/playbg.png"); */
+    height: 100%;
+}
+
+.darkenedDesc {
+    background-color: #00000052;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.darkenedDesc .whiteImg {
+    background-color: #eeeeee;
+}
+
+.darkenedDescText {
+    text-align: left;
+    align-self: center;
+    background: -webkit-linear-gradient(#baffff, #8accff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.playButtonInner {
+    position: relative;
+    top: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background: none;
+    background-image: url("../images/play.png");
+    border: none;
+}
+.playButtonInner:hover {
+    background-image: url("../images/playb.png");
+}
+
+.games_container iframe {
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    zoom: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 4px solid black;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 4px #22228877);
+}
+
+.cartSection {
+    padding-top: 40px;
+}
+
+.gamesButton {
+    background: none;
+    background-image: url("../images/cartridgeb.png");
+    width: 230px;
+    height: 168px;
+    border: none;
+    display: inline-flexbox;
+    padding: 12px;
+    margin: 12px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    filter: drop-shadow(4px 4px 4px #22228877);
+    transform-origin: 0px 0px;
+    transition: filter 120ms ease-in-out;
+}
+
+.gamesButton:hover {
+    /* transform-origin: 0px -20px; */
+    filter: drop-shadow(4px 4px 4px red);
+}
+
+.gamesButtonb {
+    background: none;
+    background-image: url("../images/cartridge.png");
+    width: 230px;
+    height: 168px;
+    border: none;
+    display: inline-flexbox;
+    padding: 12px;
+    margin: 12px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    filter: drop-shadow(4px 4px 4px #22228877);
+    transform-origin: 0px 0px;
+    transition: filter 120ms ease-in-out;
+}
+
+.gamesThumb {
+    width: 200px;
+    height: auto;
+    display: inline;
+    position: relative;
+    left: 0px;
+    top: -5px;
+}

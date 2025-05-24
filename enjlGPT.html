@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EnjlGPT</title>
+    <style>
+        /* Chat container */
+        .chat-container {
+            width: 30%;
+            height: 40%;
+            min-width: 400px;
+            min-height: 500px;
+            overflow-y: scroll;
+            margin: auto;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        /* Individual messages */
+        .message {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* User message */
+        .user-message {
+            background-color: #66e464;
+            padding: 15px;
+            margin-left: 10%;
+            border-radius: 25px;
+            font-size: 18px;
+            font-family:sans-serif;
+            word-wrap: break-word;
+        }
+
+        /* Bot message */
+        .bot-message {
+            background-color: #e2e2e2;
+            padding: 15px;
+            margin-right: 10%;
+            border-radius: 25px;
+            font-size: 18px;
+            font-family:sans-serif;
+            word-wrap: break-word;
+        }
+
+        /* Input form */
+        form {
+            margin: auto;
+            margin-top: 50px;
+            text-align: center; /* Center the form */
+        }
+
+        /* Input field */
+        input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Send button */
+        button[type="submit"] {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Loading animation */
+        .loading-animation {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #4CAF50;
+            border-top: 2px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 5px;
+        }
+
+        /* Animation keyframes */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="user-query" placeholder="Enter your query">
+        <button type="submit">Send</button>
+    </form>
+    <div class="chat-container">
+        <div class="message bot-message">
+            Hello. What can I help with today?
+        </div>
+        <div class="loading-animation"></div>
+    </div>
+    <script>
+        var processing = false;
+        const form = document.querySelector('form');
+        const chatContainer = document.querySelector('.chat-container');
+        const loadingAnimation = document.querySelector('.loading-animation');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (processing) {
+                return;
+            }
+            processing = true;
+            const userQuery = document.getElementById('user-query').value;
+                document.getElementById('user-query').value = '';
+            if (userQuery == "") {
+                return;
+            }
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('message', 'user-message');
+            userMessage.textContent = userQuery;
+            chatContainer.insertBefore(userMessage, loadingAnimation);
+
+            const botMessage = document.createElement('div');
+            const botMessageContent = document.createElement('a');
+            botMessage.classList.add('message', 'bot-message');
+            botMessageContent.href = "https://letmegooglethat.com/?q=" + encodeURIComponent(userQuery);
+            botMessageContent.target = "_blank"
+            botMessageContent.textContent = `https://letmegooglethat.com/?q=${encodeURIComponent(userQuery)}`;
+            botMessage.appendChild(botMessageContent);
+            loadingAnimation.style.display = 'inline-block'; // Show loading animation
+            setTimeout(() => {
+                processing = false;
+                chatContainer.insertBefore(botMessage, loadingAnimation);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+                loadingAnimation.style.display = 'none'; // Hide loading animation
+            }, 1000); // Delay for 1 second
+        });
+    </script>
+</body>
+</html>
