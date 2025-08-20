@@ -1,0 +1,25 @@
+.blogElement {
+    padding: 10px 30px;
+    margin: 10px;
+    text-align: left;
+    font: inherit;
+    overflow-y: scroll;
+    background: linear-gradient(#000000FF, #00000000);
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    border: 2px solid #464689;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.blogElement p {
+    color: #a2a2d6;
+}
+
+.blogElement:hover {
+    background: linear-gradient(#37379579, #00000000)
+}

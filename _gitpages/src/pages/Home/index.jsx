@@ -17,6 +17,7 @@ import Timeline from '../../components/Timeline';
 import Music from '../../components/Music';
 import Dex from '../../components/Dex';
 import Games from '../../components/Games';
+import Bloglist from '../../components/bloglist'
 
 export function Home() {
 	function get_newspaper() {
@@ -106,6 +107,7 @@ export function Home() {
 				<button onClick={() => setTab(0)} className={tab == 0 ? "CoolRadioA" : "CoolRadio"}>Arcade</button>
 				<button onClick={() => setTab(1)} className={tab == 1 ? "CoolRadioA" : "CoolRadio"}>Jukebox</button>
 				<button onClick={() => setTab(2)} className={tab == 2 ? "CoolRadioA" : "CoolRadio"}>Creecherpedia</button>
+				<button onClick={() => setTab(3)} className={tab == 3 ? "CoolRadioA" : "CoolRadio"}>𝓑𝓵𝓸𝓰</button>
 			</div>
 
 
@@ -132,7 +134,17 @@ export function Home() {
 				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
 				<DropElement>
 					<div style={{textAlign: "center"}} className={"center"}>
-						<Dex></Dex>
+						{/* <Dex></Dex> */}
+						Coming soon... tease-tease, tee-hee
+					</div>
+				</DropElement>
+			</Stardiv> : null}
+			{(tab == 3) ? <Stardiv>
+				<Sticker side = "tl"><img src={Sticker_Gradient}></img></Sticker>
+				<Sticker side = "br"><img src={Sticker_Stars}></img></Sticker>
+				<DropElement>
+					<div style={{textAlign: "center"}} className={"center"}>
+						<Bloglist></Bloglist>
 					</div>
 				</DropElement>
 			</Stardiv> : null}

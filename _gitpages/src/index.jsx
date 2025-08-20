@@ -5,6 +5,7 @@ import img_logo from "./assets/logoo.png"
 import { Header } from './components/Header.jsx';
 import { Nyxel } from './components/Nyxel.jsx';
 import { Home } from './pages/Home/index.jsx';
+import Blog from './pages/blog/index.jsx';
 import { NotFound } from './pages/_404.jsx';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import './style.css';
@@ -22,6 +23,7 @@ export function App() {
 					<CSSTransition key={path} classNames="fade" timeout={300}>
 						<Router>
 							<Route path="/" component={Home} />
+							<Route path="/blog" component={Blog} />
 							<Route default component={NotFound} />
 						</Router>
 					</CSSTransition>
