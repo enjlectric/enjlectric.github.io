@@ -16,13 +16,13 @@ class Blog extends Component {
 		let params = new URLSearchParams(new URL(window.location.href).searchParams.toString());
 
 		this.state = {
-			post: params.get("poast")
+			post: window.location.href.split("poast=")[1]
 		}
-		console.log(params.get("poast"))
 	}
 
 	returnHome() {
 		window.location.href = "../"
+		window.scrollTo(0,0); 
 	}
 
 	render() {

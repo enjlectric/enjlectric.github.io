@@ -14,7 +14,10 @@ export default function page() {
             desc: description,
             url: url,
             date: date,
-            onClick: () => window.location.href = "/blog?poast=" + url
+            onClick: () => {
+                window.location.href = "/#/blog?poast=" + url
+                window.scrollTo(0,0); 
+            }
         }
     }
     const pages = [
