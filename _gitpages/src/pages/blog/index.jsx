@@ -7,6 +7,7 @@ import '../Home/style.css';
 import { Component } from 'preact';
 import P_TEMP from './blogpage_template'
 import P_INTER from './blogpage_interact'
+import P_YOU from './blogpage_you'
 import Bloglist from "../../components/bloglist"
 
 class Blog extends Component {
@@ -31,6 +32,9 @@ class Blog extends Component {
 			<div className="App">
 				<button style="margin: auto 100px" onClick={() => self.returnHome()} className={"CoolRadioA"}>I'm afraid of words actually</button>
 				
+				{
+					(this.state.post == "byyouforyou") && <P_YOU></P_YOU>
+				}
 				{
 					(this.state.post == "interact") && <P_INTER></P_INTER>
 				}
