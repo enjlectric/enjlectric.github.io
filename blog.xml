@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Enjl's Blenjl</title>
+<link>https://enjlectric.github.io/</link>
+<description>Hi, I'm Enjl. Welcome to my website.</description>
+
+<item>
+<title>You are what makes your game yours</title>
+<link>https://enjlectric.github.io/#/blog?poast=byyouforyou</link>
+<guid>https://enjlectric.github.io/#/blog?poast=byyouforyou</guid>
+<pubDate>Thu, 21 Aug 2025 10:57:57 GMT</pubDate>
+<description>Or: UNLEARN THEORY EMBRACE YOUR BRAIN.</description>
+</item>
+
+<item>
+<title>Designing to make players gamify themselves</title>
+<link>https://enjlectric.github.io/#/blog?poast=interact</link>
+<guid>https://enjlectric.github.io/#/blog?poast=interact</guid>
+<pubDate>Wed, 20 Aug 2025 10:57:57 GMT</pubDate>
+<description>A non-visual non-novel-type non-game you can play with your eyes.</description>
+</item>
+
+</channel>
+</rss>

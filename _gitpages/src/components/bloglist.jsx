@@ -28,6 +28,7 @@ export default function page() {
         <div>
             <h1>The Poaster's prairie</h1>
             <p>This is where I occasionally write blog posts about things that are on my mind.<br/><small>(turns to camera)</small> Hi. I'm Enjl.</p>
+            <a href="https://enjlectric.github.io/blog.xml">RSS</a>
             {
                 pages.map((b, idx) => {
                     return (<button onClick={b.onClick} className = "blogElement">
