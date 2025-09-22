@@ -10,6 +10,8 @@ import icon_itch from '../../assets/itch.png';
 import icon_yout from '../../assets/youtube.png';
 import icon_band from '../../assets/bandcamp.png';
 import icon_bsky from '../../assets/bsky.png';
+import f_waddle from '../../images/f_waddle.png';
+import f_squp from '../../images/f_squp.png';
 import './style.css';
 import { useRef, useEffect, useCallback, useState } from 'preact/hooks'
 import { Explainable } from '../../components/Explainable';
@@ -94,6 +96,27 @@ export function Home() {
 					</div>
 				</DropElement>
 			</Stardiv>
+
+			<div className={"friends"}>
+				<div className={"friendList"}>
+					<a href="https://bsky.app/profile/thewaddle.bsky.social" target="_blank">
+						<img src={f_waddle}/>
+						<div class="toshow">
+							waddle
+						</div>
+					</a>
+					<a href="https://squp.neocities.org/" target="_blank">
+						<img src={f_squp}/>
+						<div class="toshow">
+							squp
+						</div>
+					</a>
+				</div>
+				<div className="coolText">
+					Click on my awesome freinds!!!
+				</div>
+			</div>
+
 			<div>
 				<img className="kwee" id="kwee1" src={Kwee2}></img>
 				<img className="kwee" id="kwee2" src={Kwee2}></img>
@@ -101,6 +124,7 @@ export function Home() {
 				<img className="kwee" id="kwee4" src={Kwee2}></img>
 				<img className="kwee" id="kwee5" src={Kwee}></img>
 			</div>
+
 			<div className="center"><h2>Check a look of this<br/>And by "this" I mean, heh, well..</h2></div>
 
 			<div style={{display: "flex", maxWidth: "960px", margin: "auto", width: "80%"}}>

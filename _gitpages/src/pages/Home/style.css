@@ -86,7 +86,7 @@ html {
     transform: rotate(0.2deg);
     background: linear-gradient(#a7b7c7, #8787a7);
     border-radius: 4px;
-    color: #1a1a37;
+    color: #101013;
     line-height: 1.3em;
     padding-top: 2px;
     padding-right: 20px;
@@ -101,6 +101,113 @@ html {
 
 .leftside h3 {
     color: #87b6f7;
+}
+
+.coolText {
+    text-align: center;
+    font-weight: 1000;
+    color: black;
+    animation-name: textCycle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    rotate: -1deg;
+}
+
+@keyframes textCycle {
+    0% {
+        color: #551111;
+        rotate: -1deg;
+    }
+    16% {
+        color: #555511;
+        rotate: 0deg;
+    }
+    33% {
+        color: #115511;
+        rotate: 1deg;
+    }
+    50% {
+        color: #115555;
+        rotate: 1deg;
+    }
+    66% {
+        color: #111155;
+        rotate: 0deg;
+    }
+    83% {
+        color: #551155;
+        rotate: -1deg;
+    }
+    100% {
+        color: #551111;
+        rotate: -1deg;
+    }
+}
+
+.friendList {
+    position: absolute;
+    margin-top: -62px;
+}
+
+.toshow { 
+    display:none; 
+    position:absolute;
+    left: 0%;
+    right: 0%;
+    align-items: center;
+    align-self: center;
+    background: linear-gradient(#327777, #58ad9f);
+    border-radius:12px;
+    text-align: center;
+    margin-top: -120px;
+    
+    border: 2px solid #38b238;
+    filter: drop-shadow(4px 4px);
+    color: #121236;
+    width: fit-content;
+    padding: 4px 20px;
+    transform:translateX(-30%);
+}
+
+.friends {
+    background: linear-gradient(#b7efd1, #5787b7);
+    margin: 10px 50% 10px auto;
+    width: 40%;
+    border-radius: 5px;
+    border: 2px solid #070721;
+    margin-right: 40%;
+    max-width: 960px;
+    min-width: 200px;
+    padding: 10px;
+    a {
+        position: relative;
+    }
+    a:hover img {
+        position: relative;
+        bottom: 0px;
+        animation: bounce 0.3s linear infinite;
+    }
+    a:hover div.toshow { 
+        display:block; 
+    }
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0px;
+    }
+    30% {
+        bottom: 2px;
+    }
+    50% {
+        bottom: 3px;
+    }
+    70% {
+        bottom: 2px;
+    }
+    100% {
+        bottom: 0px;
+    }
 }
 
 h2 {
