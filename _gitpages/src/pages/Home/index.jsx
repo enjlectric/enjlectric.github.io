@@ -12,6 +12,11 @@ import icon_band from '../../assets/bandcamp.png';
 import icon_bsky from '../../assets/bsky.png';
 import f_waddle from '../../images/f_waddle.png';
 import f_squp from '../../images/f_squp.png';
+import f_pyro from '../../images/f_pyro.png';
+import f_rixi from '../../images/f_rixi.png';
+import f_sarn from '../../images/f_sarn.png';
+import f_chao from '../../images/f_chao.png';
+import f_tassy from '../../images/f_tassy.png';
 import './style.css';
 import { useRef, useEffect, useCallback, useState } from 'preact/hooks'
 import { Explainable } from '../../components/Explainable';
@@ -109,6 +114,36 @@ export function Home() {
 						<img src={f_squp}/>
 						<div class="toshow">
 							squp
+						</div>
+					</a>
+					<a href="https://www.youtube.com/channel/UCj1-W-0evwF0R0873IRSJKw" target="_blank">
+						<img src={f_pyro}/>
+						<div class="toshow">
+							snoruntpyro
+						</div>
+					</a>
+					<a href="https://sarn.gay/" target="_blank">
+						<img src={f_sarn}/>
+						<div class="toshow">
+							sarn
+						</div>
+					</a>
+					<a href="https://rixitic.carrd.co/" target="_blank">
+						<img src={f_rixi}/>
+						<div class="toshow">
+							rixitic
+						</div>
+					</a>
+					<a href="https://taxiderby.itch.io/" target="_blank">
+						<img src={f_tassy}/>
+						<div class="toshow">
+							tassy
+						</div>
+					</a>
+					<a href="https://www.youtube.com/@Chaofanatic" target="_blank">
+						<img src={f_chao}/>
+						<div class="toshow">
+							chaofanatic
 						</div>
 					</a>
 				</div>
