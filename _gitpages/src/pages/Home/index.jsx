@@ -17,6 +17,7 @@ import f_rixi from '../../images/f_rixi.png';
 import f_sarn from '../../images/f_sarn.png';
 import f_chao from '../../images/f_chao.png';
 import f_tassy from '../../images/f_tassy.png';
+import f_shinji from '../../images/f_shinji.png';
 import './style.css';
 import { useRef, useEffect, useCallback, useState } from 'preact/hooks'
 import { Explainable } from '../../components/Explainable';
@@ -144,6 +145,12 @@ export function Home() {
 						<img src={f_chao}/>
 						<div class="toshow">
 							chaofanatic
+						</div>
+					</a>
+					<a href="https://www.shinji.zone/" target="_blank">
+						<img src={f_shinji}/>
+						<div class="toshow">
+							shinji
 						</div>
 					</a>
 				</div>
