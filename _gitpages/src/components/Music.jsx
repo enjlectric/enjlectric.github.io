@@ -8,6 +8,10 @@ class Music extends Component {
                 <div>
                     <BandcampLink
                         name = "Starshine"
+                        src = "https://bandcamp.com/EmbeddedPlayer/album=765589866/size=large/bgcol=161a2b/linkcol=e99708/track=3994095081/minimal=true/transparent=true/"
+                    />
+                    <BandcampLink
+                        name = "Starshine"
                         src = "https://bandcamp.com/EmbeddedPlayer/album=1485155851/size=large/bgcol=161a2b/linkcol=e99708/track=972762412/minimal=true/transparent=true/"
                     />
                     <BandcampLink
