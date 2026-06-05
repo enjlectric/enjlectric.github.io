@@ -21,6 +21,7 @@ export default function page() {
         }
     }
     const pages = [
+        makepage("Thoughts on completion", "See that mountain over there? Wouldn't it be much more fun to think about it than to actually climb it?", "complete", "June 5 2026"),
         makepage("How to learn anything", "A choose-your-own-adventure blog about learning and kindness towards yourself and others", "learn", "January 11 2026"),
         makepage("You are what makes your game yours", "Or: UNLEARN THEORY EMBRACE YOUR BRAIN.", "byyouforyou", "August 21 2025"),
         makepage("Designing to make players gamify themselves", "A non-visual non-novel-type non-game you can play with your eyes.", "interact", "August 20 2025")

@@ -11,6 +11,7 @@ import P_YOU from './blogpage_you'
 import P_LEARN from './blogpage_learn'
 import P_LEARNG from './blogpage_learn_guide'
 import P_LEARNH from './blogpage_learn_help'
+import P_COMPLETE from './blogpage_completion'
 import Bloglist from "../../components/bloglist"
 
 class Blog extends Component {
@@ -40,6 +41,9 @@ class Blog extends Component {
 			<div className="App">
 				<button style="margin: auto 100px" onClick={() => self.returnHome()} className={"CoolRadioA"}>I'm afraid of words actually</button>
 				
+				{
+					(this.state.post == "complete") && <P_COMPLETE></P_COMPLETE>
+				}
 				{
 					(this.state.post == "learn") && <P_LEARN setPost = {a => self.setPost(self, a)}></P_LEARN>
 				}
